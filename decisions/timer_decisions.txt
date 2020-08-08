@@ -1,0 +1,25 @@
+country_decisions = { #Timer
+    timer_decisions = {
+        major = yes
+        potential = {
+			ai = no
+        }
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = timer_decisions.1
+				always = yes
+			}
+		}
+        effect = {
+			custom_tooltip = timer_decisions.2
+			hidden_effect = {
+				country_event = {
+					id = timer_events.1
+				}
+			}
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+}

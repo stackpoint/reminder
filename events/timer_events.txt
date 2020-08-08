@@ -1,0 +1,7882 @@
+namespace = timer_events
+
+country_event = { #set year
+	id = timer_events.1
+	title = timer_events.1.t
+	desc = timer_events.1.d
+	picture = COLONIZATION_eventPicture
+	is_triggered_only = yes
+	
+	immediate = {
+		REB = {
+			set_country_flag = timer_active
+		}
+		set_country_flag = timer_active
+	}
+	
+	option = { #1444-1550
+		name = "timer_events.1.1xx"
+		trigger = {
+			NOT = { is_year = 1551 }
+		}
+		set_country_flag = 1xx
+		country_event = {
+			id = timer_events.2
+		}
+		clr_country_flag = 1xx
+	}
+	option = { #1551-1650
+		name = "timer_events.1.2xx"
+		trigger = {
+			NOT = { is_year = 1651 }
+		}
+		set_country_flag = 2xx
+		country_event = {
+			id = timer_events.2
+		}
+		clr_country_flag = 2xx
+	}
+	option = { #1651-1750
+		name = "timer_events.1.3xx"
+		trigger = {
+			NOT = { is_year = 1751 }
+		}
+		set_country_flag = 3xx
+		country_event = {
+			id = timer_events.2
+		}
+		clr_country_flag = 3xx
+	}
+	option = { #1751-1821
+		name = "timer_events.1.4xx"
+		trigger = {
+			always = yes
+		}
+		set_country_flag = 4xx
+		country_event = {
+			id = timer_events.2
+		}
+		clr_country_flag = 4xx
+	}
+	
+	after = {
+		#none
+	}
+}
+
+country_event = { #set year
+	id = timer_events.2
+	title = timer_events.2.t
+	desc = timer_events.2.d
+	picture = COLONIZATION_eventPicture
+	is_triggered_only = yes
+	
+	immediate = {
+		#none
+	}
+	
+	option = { #1444-1475
+		name = "timer_events.2.x1x"
+		trigger = {
+			has_country_flag = 1xx
+			NOT = { is_year = 1476 }
+		}
+		set_country_flag = x1x
+		country_event = {
+			id = timer_events.3
+		}
+		clr_country_flag = x1x
+	}
+	option = { #1476-1500
+		name = "timer_events.2.x2x"
+		trigger = {
+			has_country_flag = 1xx
+			NOT = { is_year = 1501 }
+		}
+		set_country_flag = x2x
+		country_event = {
+			id = timer_events.3
+		}
+		clr_country_flag = x2x
+	}
+	option = { #1501-1525
+		name = "timer_events.2.x3x"
+		trigger = {
+			has_country_flag = 1xx
+			NOT = { is_year = 1526 }
+		}
+		set_country_flag = x3x
+		country_event = {
+			id = timer_events.3
+		}
+		clr_country_flag = x3x
+	}
+	option = { #1526-1550
+		name = "timer_events.2.x4x"
+		trigger = {
+			has_country_flag = 1xx
+			NOT = { is_year = 1551 }
+		}
+		set_country_flag = x4x
+		country_event = {
+			id = timer_events.3
+		}
+		clr_country_flag = x4x
+	}
+	option = { #1551-1575
+		name = "timer_events.2.x5x"
+		trigger = {
+			has_country_flag = 2xx
+			NOT = { is_year = 1576 }
+		}
+		set_country_flag = x5x
+		country_event = {
+			id = timer_events.3
+		}
+		clr_country_flag = x5x
+	}
+	option = { #1576-1600
+		name = "timer_events.2.x6x"
+		trigger = {
+			has_country_flag = 2xx
+			NOT = { is_year = 1601 }
+		}
+		set_country_flag = x6x
+		country_event = {
+			id = timer_events.3
+		}
+		clr_country_flag = x6x
+	}
+	option = { #1601-1625
+		name = "timer_events.2.x7x"
+		trigger = {
+			has_country_flag = 2xx
+			NOT = { is_year = 1626 }
+		}
+		set_country_flag = x7x
+		country_event = {
+			id = timer_events.3
+		}
+		clr_country_flag = x7x
+	}
+	option = { #1626-1650
+		name = "timer_events.2.x8x"
+		trigger = {
+			has_country_flag = 2xx
+			NOT = { is_year = 1651 }
+		}
+		set_country_flag = x8x
+		country_event = {
+			id = timer_events.3
+		}
+		clr_country_flag = x8x
+	}
+	option = { #1651-1675
+		name = "timer_events.2.x9x"
+		trigger = {
+			has_country_flag = 3xx
+			NOT = { is_year = 1676 }
+		}
+		set_country_flag = x9x
+		country_event = {
+			id = timer_events.3
+		}
+		clr_country_flag = x9x
+	}
+	option = { #1676-1700
+		name = "timer_events.2.x10"
+		trigger = {
+			has_country_flag = 3xx
+			NOT = { is_year = 1701 }
+		}
+		set_country_flag = x10
+		country_event = {
+			id = timer_events.3
+		}
+		clr_country_flag = x10
+	}
+	option = { #1701-1725
+		name = "timer_events.2.x11x"
+		trigger = {
+			has_country_flag = 3xx
+			NOT = { is_year = 1726 }
+		}
+		set_country_flag = x11x
+		country_event = {
+			id = timer_events.3
+		}
+		clr_country_flag = x11x
+	}
+	option = { #1726-1750
+		name = "timer_events.2.x12x"
+		trigger = {
+			has_country_flag = 3xx
+			NOT = { is_year = 1751 }
+		}
+		set_country_flag = x12x
+		country_event = {
+			id = timer_events.3
+		}
+		clr_country_flag = x12x
+	}
+	option = { #1751-1775
+		name = "timer_events.2.x13x"
+		trigger = {
+			has_country_flag = 4xx
+			NOT = { is_year = 1776 }
+		}
+		set_country_flag = x13x
+		country_event = {
+			id = timer_events.3
+		}
+		clr_country_flag = x13x
+	}
+	option = { #1776-1800
+		name = "timer_events.2.x14x"
+		trigger = {
+			has_country_flag = 4xx
+			NOT = { is_year = 1801 }
+		}
+		set_country_flag = x14x
+		country_event = {
+			id = timer_events.3
+		}
+		clr_country_flag = x14x
+	}
+	option = { #1801-1821
+		name = "timer_events.2.x15x"
+		trigger = {
+			has_country_flag = 4xx
+			#NOT = { is_year = 1826 }
+		}
+		set_country_flag = x15x
+		country_event = {
+			id = timer_events.3
+		}
+		clr_country_flag = x15x
+	}
+	
+	after = {
+		#none
+	}
+}
+
+country_event = { #set year
+	id = timer_events.3
+	title = timer_events.3.t
+	desc = timer_events.3.d
+	picture = COLONIZATION_eventPicture
+	is_triggered_only = yes
+	
+	immediate = {
+		#none
+	}
+	
+	option = { #1444-1450
+		name = "timer_events.3.xx0"
+		trigger = {
+			has_country_flag = x1x
+			NOT = { is_year = 1451 }
+		}
+		set_country_flag = xx0
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx0
+	}
+	option = { #1451-1455
+		name = "timer_events.3.xx1"
+		trigger = {
+			has_country_flag = x1x
+			NOT = { is_year = 1456 }
+		}
+		set_country_flag = xx1
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx1
+	}
+	option = { #1456-1460
+		name = "timer_events.3.xx2"
+		trigger = {
+			has_country_flag = x1x
+			NOT = { is_year = 1461 }
+		}
+		set_country_flag = xx2
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx2
+	}
+	option = { #1461-1465
+		name = "timer_events.3.xx3"
+		trigger = {
+			has_country_flag = x1x
+			NOT = { is_year = 1466 }
+		}
+		set_country_flag = xx3
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx3
+	}
+	option = { #1466-1470
+		name = "timer_events.3.xx4"
+		trigger = {
+			has_country_flag = x1x
+			NOT = { is_year = 1471 }
+		}
+		set_country_flag = xx4
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx4
+	}
+	option = { #1471-1475
+		name = "timer_events.3.xx5"
+		trigger = {
+			has_country_flag = x1x
+			NOT = { is_year = 1476 }
+		}
+		set_country_flag = xx5
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx5
+	}
+	option = { #1476-1480
+		name = "timer_events.3.xx6"
+		trigger = {
+			has_country_flag = x2x
+			NOT = { is_year = 1481 }
+		}
+		set_country_flag = xx6
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx6
+	}
+	option = { #1481-1485
+		name = "timer_events.3.xx7"
+		trigger = {
+			has_country_flag = x2x
+			NOT = { is_year = 1486 }
+		}
+		set_country_flag = xx7
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx7
+	}
+	option = { #1486-1490
+		name = "timer_events.3.xx8"
+		trigger = {
+			has_country_flag = x2x
+			NOT = { is_year = 1491 }
+		}
+		set_country_flag = xx8
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx8
+	}
+	option = { #1491-1495
+		name = "timer_events.3.xx9"
+		trigger = {
+			has_country_flag = x2x
+			NOT = { is_year = 1496 }
+		}
+		set_country_flag = xx9
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx9
+	}
+	option = { #1496-1500
+		name = "timer_events.3.xx10"
+		trigger = {
+			has_country_flag = x2x
+			NOT = { is_year = 1501 }
+		}
+		set_country_flag = xx10
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx10
+	}
+	option = { #1501-1505
+		name = "timer_events.3.xx11"
+		trigger = {
+			has_country_flag = x3x
+			NOT = { is_year = 1506 }
+		}
+		set_country_flag = xx11
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx11
+	}
+	option = { #1506-1510
+		name = "timer_events.3.xx12"
+		trigger = {
+			has_country_flag = x3x
+			NOT = { is_year = 1511 }
+		}
+		set_country_flag = xx12
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx12
+	}
+	option = { #1511-1515
+		name = "timer_events.3.xx13"
+		trigger = {
+			has_country_flag = x3x
+			NOT = { is_year = 1516 }
+		}
+		set_country_flag = xx13
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx13
+	}
+	option = { #1516-1520
+		name = "timer_events.3.xx14"
+		trigger = {
+			has_country_flag = x3x
+			NOT = { is_year = 1521 }
+		}
+		set_country_flag = xx14
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx14
+	}
+	option = { #1521-1525
+		name = "timer_events.3.xx15"
+		trigger = {
+			has_country_flag = x3x
+			NOT = { is_year = 1526 }
+		}
+		set_country_flag = xx15
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx15
+	}
+	option = { #1526-1530
+		name = "timer_events.3.xx16"
+		trigger = {
+			has_country_flag = x4x
+			NOT = { is_year = 1531 }
+		}
+		set_country_flag = xx16
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx16
+	}
+	option = { #1531-1535
+		name = "timer_events.3.xx17"
+		trigger = {
+			has_country_flag = x4x
+			NOT = { is_year = 1536 }
+		}
+		set_country_flag = xx17
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx17
+	}
+	option = { #1536-1540
+		name = "timer_events.3.xx18"
+		trigger = {
+			has_country_flag = x4x
+			NOT = { is_year = 1541 }
+		}
+		set_country_flag = xx18
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx18
+	}
+	option = { #1541-1545
+		name = "timer_events.3.xx19"
+		trigger = {
+			has_country_flag = x4x
+			NOT = { is_year = 1546 }
+		}
+		set_country_flag = xx19
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx19
+	}
+	option = { #1546-1550
+		name = "timer_events.3.xx20"
+		trigger = {
+			has_country_flag = x4x
+			NOT = { is_year = 1551 }
+		}
+		set_country_flag = xx20
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx20
+	}
+	option = { #1551-1555
+		name = "timer_events.3.xx21"
+		trigger = {
+			has_country_flag = x5x
+			NOT = { is_year = 1556 }
+		}
+		set_country_flag = xx21
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx21
+	}
+	option = { #1556-1560
+		name = "timer_events.3.xx22"
+		trigger = {
+			has_country_flag = x5x
+			NOT = { is_year = 1561 }
+		}
+		set_country_flag = xx22
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx22
+	}
+	option = { #1561-1565
+		name = "timer_events.3.xx23"
+		trigger = {
+			has_country_flag = x5x
+			NOT = { is_year = 1566 }
+		}
+		set_country_flag = xx23
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx23
+	}
+	option = { #1566-1570
+		name = "timer_events.3.xx24"
+		trigger = {
+			has_country_flag = x5x
+			NOT = { is_year = 1571 }
+		}
+		set_country_flag = xx24
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx24
+	}
+	option = { #1571-1575
+		name = "timer_events.3.xx25"
+		trigger = {
+			has_country_flag = x5x
+			NOT = { is_year = 1576 }
+		}
+		set_country_flag = xx25
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx25
+	}
+	option = { #1576-1580
+		name = "timer_events.3.xx26"
+		trigger = {
+			has_country_flag = x6x
+			NOT = { is_year = 1581 }
+		}
+		set_country_flag = xx26
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx26
+	}
+	option = { #1581-1585
+		name = "timer_events.3.xx27"
+		trigger = {
+			has_country_flag = x6x
+			NOT = { is_year = 1586 }
+		}
+		set_country_flag = xx27
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx27
+	}
+	option = { #1586-1590
+		name = "timer_events.3.xx28"
+		trigger = {
+			has_country_flag = x6x
+			NOT = { is_year = 1591 }
+		}
+		set_country_flag = xx28
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx28
+	}
+	option = { #1591-1595
+		name = "timer_events.3.xx29"
+		trigger = {
+			has_country_flag = x6x
+			NOT = { is_year = 1596 }
+		}
+		set_country_flag = xx29
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx29
+	}
+	option = { #1596-1600
+		name = "timer_events.3.xx30"
+		trigger = {
+			has_country_flag = x6x
+			NOT = { is_year = 1601 }
+		}
+		set_country_flag = xx30
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx30
+	}
+	option = { #1601-1605
+		name = "timer_events.3.xx31"
+		trigger = {
+			has_country_flag = x7x
+			NOT = { is_year = 1606 }
+		}
+		set_country_flag = xx31
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx31
+	}
+	option = { #1606-1610
+		name = "timer_events.3.xx32"
+		trigger = {
+			has_country_flag = x7x
+			NOT = { is_year = 1611 }
+		}
+		set_country_flag = xx32
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx32
+	}
+	option = { #1611-1615
+		name = "timer_events.3.xx33"
+		trigger = {
+			has_country_flag = x7x
+			NOT = { is_year = 1616 }
+		}
+		set_country_flag = xx33
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx33
+	}
+	option = { #1616-1620
+		name = "timer_events.3.xx34"
+		trigger = {
+			has_country_flag = x7x
+			NOT = { is_year = 1621 }
+		}
+		set_country_flag = xx34
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx34
+	}
+	option = { #1621-1625
+		name = "timer_events.3.xx35"
+		trigger = {
+			has_country_flag = x7x
+			NOT = { is_year = 1626 }
+		}
+		set_country_flag = xx35
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx35
+	}
+	option = { #1626-1630
+		name = "timer_events.3.xx36"
+		trigger = {
+			has_country_flag = x8x
+			NOT = { is_year = 1631 }
+		}
+		set_country_flag = xx36
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx36
+	}
+	option = { #1631-1635
+		name = "timer_events.3.xx37"
+		trigger = {
+			has_country_flag = x8x
+			NOT = { is_year = 1636 }
+		}
+		set_country_flag = xx37
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx37
+	}
+	option = { #1636-1640
+		name = "timer_events.3.xx38"
+		trigger = {
+			has_country_flag = x8x
+			NOT = { is_year = 1641 }
+		}
+		set_country_flag = xx38
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx38
+	}
+	option = { #1641-1645
+		name = "timer_events.3.xx39"
+		trigger = {
+			has_country_flag = x8x
+			NOT = { is_year = 1646 }
+		}
+		set_country_flag = xx39
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx39
+	}
+	option = { #1646-1650
+		name = "timer_events.3.xx40"
+		trigger = {
+			has_country_flag = x8x
+			NOT = { is_year = 1651 }
+		}
+		set_country_flag = xx40
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx40
+	}
+	option = { #1651-1655
+		name = "timer_events.3.xx41"
+		trigger = {
+			has_country_flag = x9x
+			NOT = { is_year = 1656 }
+		}
+		set_country_flag = xx41
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx41
+	}
+	option = { #1656-1660
+		name = "timer_events.3.xx42"
+		trigger = {
+			has_country_flag = x9x
+			NOT = { is_year = 1661 }
+		}
+		set_country_flag = xx42
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx42
+	}
+	option = { #1661-1665
+		name = "timer_events.3.xx43"
+		trigger = {
+			has_country_flag = x9x
+			NOT = { is_year = 1666 }
+		}
+		set_country_flag = xx43
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx43
+	}
+	option = { #1666-1670
+		name = "timer_events.3.xx44"
+		trigger = {
+			has_country_flag = x9x
+			NOT = { is_year = 1671 }
+		}
+		set_country_flag = xx44
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx44
+	}
+	option = { #1671-1675
+		name = "timer_events.3.xx45"
+		trigger = {
+			has_country_flag = x9x
+			NOT = { is_year = 1676 }
+		}
+		set_country_flag = xx45
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx45
+	}
+	option = { #1676-1680
+		name = "timer_events.3.xx46"
+		trigger = {
+			has_country_flag = x10
+			NOT = { is_year = 1681 }
+		}
+		set_country_flag = xx46
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx46
+	}
+	option = { #1681-1685
+		name = "timer_events.3.xx47"
+		trigger = {
+			has_country_flag = x10
+			NOT = { is_year = 1686 }
+		}
+		set_country_flag = xx47
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx47
+	}
+	option = { #1686-1690
+		name = "timer_events.3.xx48"
+		trigger = {
+			has_country_flag = x10
+			NOT = { is_year = 1691 }
+		}
+		set_country_flag = xx48
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx48
+	}
+	option = { #1691-1695
+		name = "timer_events.3.xx49"
+		trigger = {
+			has_country_flag = x10
+			NOT = { is_year = 1696 }
+		}
+		set_country_flag = xx49
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx49
+	}
+	option = { #1696-1700
+		name = "timer_events.3.xx50"
+		trigger = {
+			has_country_flag = x10
+			NOT = { is_year = 1701 }
+		}
+		set_country_flag = xx50
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx50
+	}
+	option = { #1701-1705
+		name = "timer_events.3.xx51"
+		trigger = {
+			has_country_flag = x11x
+			NOT = { is_year = 1706 }
+		}
+		set_country_flag = xx51
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx51
+	}
+	option = { #1706-1710
+		name = "timer_events.3.xx52"
+		trigger = {
+			has_country_flag = x11x
+			NOT = { is_year = 1711 }
+		}
+		set_country_flag = xx52
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx52
+	}
+	option = { #1711-1715
+		name = "timer_events.3.xx53"
+		trigger = {
+			has_country_flag = x11x
+			NOT = { is_year = 1716 }
+		}
+		set_country_flag = xx53
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx53
+	}
+	option = { #1716-1720
+		name = "timer_events.3.xx54"
+		trigger = {
+			has_country_flag = x11x
+			NOT = { is_year = 1721 }
+		}
+		set_country_flag = xx54
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx54
+	}
+	option = { #1721-1725
+		name = "timer_events.3.xx55"
+		trigger = {
+			has_country_flag = x11x
+			NOT = { is_year = 1726 }
+		}
+		set_country_flag = xx55
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx55
+	}
+	option = { #1726-1730
+		name = "timer_events.3.xx56"
+		trigger = {
+			has_country_flag = x12x
+			NOT = { is_year = 1731 }
+		}
+		set_country_flag = xx56
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx56
+	}
+	option = { #1731-1735
+		name = "timer_events.3.xx57"
+		trigger = {
+			has_country_flag = x12x
+			NOT = { is_year = 1736 }
+		}
+		set_country_flag = xx57
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx57
+	}
+	option = { #1736-1740
+		name = "timer_events.3.xx58"
+		trigger = {
+			has_country_flag = x12x
+			NOT = { is_year = 1741 }
+		}
+		set_country_flag = xx58
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx58
+	}
+	option = { #1741-1745
+		name = "timer_events.3.xx59"
+		trigger = {
+			has_country_flag = x12x
+			NOT = { is_year = 1746 }
+		}
+		set_country_flag = xx59
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx59
+	}
+	option = { #1746-1750
+		name = "timer_events.3.xx60"
+		trigger = {
+			has_country_flag = x12x
+			NOT = { is_year = 1751 }
+		}
+		set_country_flag = xx60
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx60
+	}
+	option = { #1751-1755
+		name = "timer_events.3.xx61"
+		trigger = {
+			has_country_flag = x13x
+			NOT = { is_year = 1756 }
+		}
+		set_country_flag = xx61
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx61
+	}
+	option = { #1756-1760
+		name = "timer_events.3.xx62"
+		trigger = {
+			has_country_flag = x13x
+			NOT = { is_year = 1761 }
+		}
+		set_country_flag = xx62
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx62
+	}
+	option = { #1761-1765
+		name = "timer_events.3.xx63"
+		trigger = {
+			has_country_flag = x13x
+			NOT = { is_year = 1766 }
+		}
+		set_country_flag = xx63
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx63
+	}
+	option = { #1766-1770
+		name = "timer_events.3.xx64"
+		trigger = {
+			has_country_flag = x13x
+			NOT = { is_year = 1771 }
+		}
+		set_country_flag = xx64
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx64
+	}
+	option = { #1771-1775
+		name = "timer_events.3.xx65"
+		trigger = {
+			has_country_flag = x13x
+			NOT = { is_year = 1776 }
+		}
+		set_country_flag = xx65
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx65
+	}
+	option = { #1776-1780
+		name = "timer_events.3.xx66"
+		trigger = {
+			has_country_flag = x14x
+			NOT = { is_year = 1781 }
+		}
+		set_country_flag = xx66
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx66
+	}
+	option = { #1781-1785
+		name = "timer_events.3.xx67"
+		trigger = {
+			has_country_flag = x14x
+			NOT = { is_year = 1786 }
+		}
+		set_country_flag = xx67
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx67
+	}
+	option = { #1786-1790
+		name = "timer_events.3.xx68"
+		trigger = {
+			has_country_flag = x14x
+			NOT = { is_year = 1791 }
+		}
+		set_country_flag = xx68
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx68
+	}
+	option = { #1791-1795
+		name = "timer_events.3.xx69"
+		trigger = {
+			has_country_flag = x14x
+			NOT = { is_year = 1796 }
+		}
+		set_country_flag = xx69
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx69
+	}
+	option = { #1796-1800
+		name = "timer_events.3.xx70"
+		trigger = {
+			has_country_flag = x14x
+			NOT = { is_year = 1801 }
+		}
+		set_country_flag = xx70
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx70
+	}
+	option = { #1801-1805
+		name = "timer_events.3.xx71"
+		trigger = {
+			has_country_flag = x15x
+			NOT = { is_year = 1806 }
+		}
+		set_country_flag = xx71
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx71
+	}
+	option = { #1806-1810
+		name = "timer_events.3.xx72"
+		trigger = {
+			has_country_flag = x15x
+			NOT = { is_year = 1811 }
+		}
+		set_country_flag = xx72
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx72
+	}
+	option = { #1811-1815
+		name = "timer_events.3.xx73"
+		trigger = {
+			has_country_flag = x15x
+			NOT = { is_year = 1816 }
+		}
+		set_country_flag = xx73
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx73
+	}
+	option = { #1816-1821
+		name = "timer_events.3.xx74"
+		trigger = {
+			has_country_flag = x15x
+			#NOT = { is_year = 1821 }
+		}
+		set_country_flag = xx74
+		country_event = {
+			id = timer_events.4
+		}
+		clr_country_flag = xx74
+	}
+	
+	after = {
+		#none
+	}
+}
+
+country_event = { #set year
+	id = timer_events.4
+	title = timer_events.4.t
+	desc = timer_events.4.d
+	picture = COLONIZATION_eventPicture
+	is_triggered_only = yes
+	
+	immediate = {
+		#none
+	}
+	
+	option = { #1444
+		name = "timer_events.4.1444"
+		trigger = {
+			has_country_flag = xx0
+			NOT = { is_year = 1445 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1444
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1445
+		name = "timer_events.4.1445"
+		trigger = {
+			has_country_flag = xx0
+			NOT = { is_year = 1446 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1445
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1446
+		name = "timer_events.4.1446"
+		trigger = {
+			has_country_flag = xx0
+			NOT = { is_year = 1447 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1446
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1447
+		name = "timer_events.4.1447"
+		trigger = {
+			has_country_flag = xx0
+			NOT = { is_year = 1448 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1447
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1448
+		name = "timer_events.4.1448"
+		trigger = {
+			has_country_flag = xx0
+			NOT = { is_year = 1449 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1448
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1449
+		name = "timer_events.4.1449"
+		trigger = {
+			has_country_flag = xx0
+			NOT = { is_year = 1450 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1449
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1450
+		name = "timer_events.4.1450"
+		trigger = {
+			has_country_flag = xx0
+			NOT = { is_year = 1451 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1450
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1451
+		name = "timer_events.4.1451"
+		trigger = {
+			has_country_flag = xx1
+			NOT = { is_year = 1452 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1451
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1452
+		name = "timer_events.4.1452"
+		trigger = {
+			has_country_flag = xx1
+			NOT = { is_year = 1453 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1452
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1453
+		name = "timer_events.4.1453"
+		trigger = {
+			has_country_flag = xx1
+			NOT = { is_year = 1454 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1453
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1454
+		name = "timer_events.4.1454"
+		trigger = {
+			has_country_flag = xx1
+			NOT = { is_year = 1455 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1454
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1455
+		name = "timer_events.4.1455"
+		trigger = {
+			has_country_flag = xx1
+			NOT = { is_year = 1456 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1455
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1456
+		name = "timer_events.4.1456"
+		trigger = {
+			has_country_flag = xx2
+			NOT = { is_year = 1457 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1456
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1457
+		name = "timer_events.4.1457"
+		trigger = {
+			has_country_flag = xx2
+			NOT = { is_year = 1458 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1457
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1458
+		name = "timer_events.4.1458"
+		trigger = {
+			has_country_flag = xx2
+			NOT = { is_year = 1459 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1458
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1459
+		name = "timer_events.4.1459"
+		trigger = {
+			has_country_flag = xx2
+			NOT = { is_year = 1460 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1459
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1460
+		name = "timer_events.4.1460"
+		trigger = {
+			has_country_flag = xx2
+			NOT = { is_year = 1461 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1460
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1461
+		name = "timer_events.4.1461"
+		trigger = {
+			has_country_flag = xx3
+			NOT = { is_year = 1462 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1461
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1462
+		name = "timer_events.4.1462"
+		trigger = {
+			has_country_flag = xx3
+			NOT = { is_year = 1463 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1462
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1463
+		name = "timer_events.4.1463"
+		trigger = {
+			has_country_flag = xx3
+			NOT = { is_year = 1464 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1463
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1464
+		name = "timer_events.4.1464"
+		trigger = {
+			has_country_flag = xx3
+			NOT = { is_year = 1465 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1464
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1465
+		name = "timer_events.4.1465"
+		trigger = {
+			has_country_flag = xx3
+			NOT = { is_year = 1466 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1465
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1466
+		name = "timer_events.4.1466"
+		trigger = {
+			has_country_flag = xx4
+			NOT = { is_year = 1467 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1466
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1467
+		name = "timer_events.4.1467"
+		trigger = {
+			has_country_flag = xx4
+			NOT = { is_year = 1468 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1467
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1468
+		name = "timer_events.4.1468"
+		trigger = {
+			has_country_flag = xx4
+			NOT = { is_year = 1469 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1468
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1469
+		name = "timer_events.4.1469"
+		trigger = {
+			has_country_flag = xx4
+			NOT = { is_year = 1470 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1469
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1470
+		name = "timer_events.4.1470"
+		trigger = {
+			has_country_flag = xx4
+			NOT = { is_year = 1471 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1470
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1471
+		name = "timer_events.4.1471"
+		trigger = {
+			has_country_flag = xx5
+			NOT = { is_year = 1472 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1471
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1472
+		name = "timer_events.4.1472"
+		trigger = {
+			has_country_flag = xx5
+			NOT = { is_year = 1473 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1472
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1473
+		name = "timer_events.4.1473"
+		trigger = {
+			has_country_flag = xx5
+			NOT = { is_year = 1474 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1473
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1474
+		name = "timer_events.4.1474"
+		trigger = {
+			has_country_flag = xx5
+			NOT = { is_year = 1475 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1474
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1475
+		name = "timer_events.4.1475"
+		trigger = {
+			has_country_flag = xx5
+			NOT = { is_year = 1476 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1475
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1476
+		name = "timer_events.4.1476"
+		trigger = {
+			has_country_flag = xx6
+			NOT = { is_year = 1477 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1476
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1477
+		name = "timer_events.4.1477"
+		trigger = {
+			has_country_flag = xx6
+			NOT = { is_year = 1478 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1477
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1478
+		name = "timer_events.4.1478"
+		trigger = {
+			has_country_flag = xx6
+			NOT = { is_year = 1479 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1478
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1479
+		name = "timer_events.4.1479"
+		trigger = {
+			has_country_flag = xx6
+			NOT = { is_year = 1480 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1479
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1480
+		name = "timer_events.4.1480"
+		trigger = {
+			has_country_flag = xx6
+			NOT = { is_year = 1481 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1480
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1481
+		name = "timer_events.4.1481"
+		trigger = {
+			has_country_flag = xx7
+			NOT = { is_year = 1482 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1481
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1482
+		name = "timer_events.4.1482"
+		trigger = {
+			has_country_flag = xx7
+			NOT = { is_year = 1483 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1482
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1483
+		name = "timer_events.4.1483"
+		trigger = {
+			has_country_flag = xx7
+			NOT = { is_year = 1484 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1483
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1484
+		name = "timer_events.4.1484"
+		trigger = {
+			has_country_flag = xx7
+			NOT = { is_year = 1485 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1484
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1485
+		name = "timer_events.4.1485"
+		trigger = {
+			has_country_flag = xx7
+			NOT = { is_year = 1486 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1485
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1486
+		name = "timer_events.4.1486"
+		trigger = {
+			has_country_flag = xx8
+			NOT = { is_year = 1487 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1486
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1487
+		name = "timer_events.4.1487"
+		trigger = {
+			has_country_flag = xx8
+			NOT = { is_year = 1488 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1487
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1488
+		name = "timer_events.4.1488"
+		trigger = {
+			has_country_flag = xx8
+			NOT = { is_year = 1489 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1488
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1489
+		name = "timer_events.4.1489"
+		trigger = {
+			has_country_flag = xx8
+			NOT = { is_year = 1490 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1489
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1490
+		name = "timer_events.4.1490"
+		trigger = {
+			has_country_flag = xx8
+			NOT = { is_year = 1491 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1490
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1491
+		name = "timer_events.4.1491"
+		trigger = {
+			has_country_flag = xx9
+			NOT = { is_year = 1492 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1491
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1492
+		name = "timer_events.4.1492"
+		trigger = {
+			has_country_flag = xx9
+			NOT = { is_year = 1493 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1492
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1493
+		name = "timer_events.4.1493"
+		trigger = {
+			has_country_flag = xx9
+			NOT = { is_year = 1494 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1493
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1494
+		name = "timer_events.4.1494"
+		trigger = {
+			has_country_flag = xx9
+			NOT = { is_year = 1495 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1494
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1495
+		name = "timer_events.4.1495"
+		trigger = {
+			has_country_flag = xx9
+			NOT = { is_year = 1496 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1495
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1496
+		name = "timer_events.4.1496"
+		trigger = {
+			has_country_flag = xx10
+			NOT = { is_year = 1497 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1496
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1497
+		name = "timer_events.4.1497"
+		trigger = {
+			has_country_flag = xx10
+			NOT = { is_year = 1498 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1497
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1498
+		name = "timer_events.4.1498"
+		trigger = {
+			has_country_flag = xx10
+			NOT = { is_year = 1499 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1498
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1499
+		name = "timer_events.4.1499"
+		trigger = {
+			has_country_flag = xx10
+			NOT = { is_year = 1500 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1499
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1500
+		name = "timer_events.4.1500"
+		trigger = {
+			has_country_flag = xx10
+			NOT = { is_year = 1501 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1500
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1501
+		name = "timer_events.4.1501"
+		trigger = {
+			has_country_flag = xx11
+			NOT = { is_year = 1502 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1501
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1502
+		name = "timer_events.4.1502"
+		trigger = {
+			has_country_flag = xx11
+			NOT = { is_year = 1503 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1502
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1503
+		name = "timer_events.4.1503"
+		trigger = {
+			has_country_flag = xx11
+			NOT = { is_year = 1504 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1503
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1504
+		name = "timer_events.4.1504"
+		trigger = {
+			has_country_flag = xx11
+			NOT = { is_year = 1505 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1504
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1505
+		name = "timer_events.4.1505"
+		trigger = {
+			has_country_flag = xx11
+			NOT = { is_year = 1506 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1505
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1506
+		name = "timer_events.4.1506"
+		trigger = {
+			has_country_flag = xx12
+			NOT = { is_year = 1507 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1506
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1507
+		name = "timer_events.4.1507"
+		trigger = {
+			has_country_flag = xx12
+			NOT = { is_year = 1508 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1507
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1508
+		name = "timer_events.4.1508"
+		trigger = {
+			has_country_flag = xx12
+			NOT = { is_year = 1509 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1508
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1509
+		name = "timer_events.4.1509"
+		trigger = {
+			has_country_flag = xx12
+			NOT = { is_year = 1510 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1509
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1510
+		name = "timer_events.4.1510"
+		trigger = {
+			has_country_flag = xx12
+			NOT = { is_year = 1511 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1510
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1511
+		name = "timer_events.4.1511"
+		trigger = {
+			has_country_flag = xx13
+			NOT = { is_year = 1512 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1511
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1512
+		name = "timer_events.4.1512"
+		trigger = {
+			has_country_flag = xx13
+			NOT = { is_year = 1513 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1512
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1513
+		name = "timer_events.4.1513"
+		trigger = {
+			has_country_flag = xx13
+			NOT = { is_year = 1514 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1513
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1514
+		name = "timer_events.4.1514"
+		trigger = {
+			has_country_flag = xx13
+			NOT = { is_year = 1515 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1514
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1515
+		name = "timer_events.4.1515"
+		trigger = {
+			has_country_flag = xx13
+			NOT = { is_year = 1516 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1515
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1516
+		name = "timer_events.4.1516"
+		trigger = {
+			has_country_flag = xx14
+			NOT = { is_year = 1517 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1516
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1517
+		name = "timer_events.4.1517"
+		trigger = {
+			has_country_flag = xx14
+			NOT = { is_year = 1518 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1517
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1518
+		name = "timer_events.4.1518"
+		trigger = {
+			has_country_flag = xx14
+			NOT = { is_year = 1519 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1518
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1519
+		name = "timer_events.4.1519"
+		trigger = {
+			has_country_flag = xx14
+			NOT = { is_year = 1520 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1519
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1520
+		name = "timer_events.4.1520"
+		trigger = {
+			has_country_flag = xx14
+			NOT = { is_year = 1521 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1520
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1521
+		name = "timer_events.4.1521"
+		trigger = {
+			has_country_flag = xx15
+			NOT = { is_year = 1522 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1521
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1522
+		name = "timer_events.4.1522"
+		trigger = {
+			has_country_flag = xx15
+			NOT = { is_year = 1523 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1522
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1523
+		name = "timer_events.4.1523"
+		trigger = {
+			has_country_flag = xx15
+			NOT = { is_year = 1524 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1523
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1524
+		name = "timer_events.4.1524"
+		trigger = {
+			has_country_flag = xx15
+			NOT = { is_year = 1525 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1524
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1525
+		name = "timer_events.4.1525"
+		trigger = {
+			has_country_flag = xx15
+			NOT = { is_year = 1526 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1525
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1526
+		name = "timer_events.4.1526"
+		trigger = {
+			has_country_flag = xx16
+			NOT = { is_year = 1527 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1526
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1527
+		name = "timer_events.4.1527"
+		trigger = {
+			has_country_flag = xx16
+			NOT = { is_year = 1528 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1527
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1528
+		name = "timer_events.4.1528"
+		trigger = {
+			has_country_flag = xx16
+			NOT = { is_year = 1529 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1528
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1529
+		name = "timer_events.4.1529"
+		trigger = {
+			has_country_flag = xx16
+			NOT = { is_year = 1530 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1529
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1530
+		name = "timer_events.4.1530"
+		trigger = {
+			has_country_flag = xx16
+			NOT = { is_year = 1531 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1530
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1531
+		name = "timer_events.4.1531"
+		trigger = {
+			has_country_flag = xx17
+			NOT = { is_year = 1532 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1531
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1532
+		name = "timer_events.4.1532"
+		trigger = {
+			has_country_flag = xx17
+			NOT = { is_year = 1533 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1532
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1533
+		name = "timer_events.4.1533"
+		trigger = {
+			has_country_flag = xx17
+			NOT = { is_year = 1534 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1533
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1534
+		name = "timer_events.4.1534"
+		trigger = {
+			has_country_flag = xx17
+			NOT = { is_year = 1535 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1534
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1535
+		name = "timer_events.4.1535"
+		trigger = {
+			has_country_flag = xx17
+			NOT = { is_year = 1536 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1535
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1536
+		name = "timer_events.4.1536"
+		trigger = {
+			has_country_flag = xx18
+			NOT = { is_year = 1537 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1536
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1537
+		name = "timer_events.4.1537"
+		trigger = {
+			has_country_flag = xx18
+			NOT = { is_year = 1538 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1537
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1538
+		name = "timer_events.4.1538"
+		trigger = {
+			has_country_flag = xx18
+			NOT = { is_year = 1539 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1538
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1539
+		name = "timer_events.4.1539"
+		trigger = {
+			has_country_flag = xx18
+			NOT = { is_year = 1540 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1539
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1540
+		name = "timer_events.4.1540"
+		trigger = {
+			has_country_flag = xx18
+			NOT = { is_year = 1541 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1540
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1541
+		name = "timer_events.4.1541"
+		trigger = {
+			has_country_flag = xx19
+			NOT = { is_year = 1542 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1541
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1542
+		name = "timer_events.4.1542"
+		trigger = {
+			has_country_flag = xx19
+			NOT = { is_year = 1543 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1542
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1543
+		name = "timer_events.4.1543"
+		trigger = {
+			has_country_flag = xx19
+			NOT = { is_year = 1544 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1543
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1544
+		name = "timer_events.4.1544"
+		trigger = {
+			has_country_flag = xx19
+			NOT = { is_year = 1545 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1544
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1545
+		name = "timer_events.4.1545"
+		trigger = {
+			has_country_flag = xx19
+			NOT = { is_year = 1546 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1545
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1546
+		name = "timer_events.4.1546"
+		trigger = {
+			has_country_flag = xx20
+			NOT = { is_year = 1547 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1546
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1547
+		name = "timer_events.4.1547"
+		trigger = {
+			has_country_flag = xx20
+			NOT = { is_year = 1548 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1547
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1548
+		name = "timer_events.4.1548"
+		trigger = {
+			has_country_flag = xx20
+			NOT = { is_year = 1549 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1548
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1549
+		name = "timer_events.4.1549"
+		trigger = {
+			has_country_flag = xx20
+			NOT = { is_year = 1550 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1549
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1550
+		name = "timer_events.4.1550"
+		trigger = {
+			has_country_flag = xx20
+			NOT = { is_year = 1551 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1550
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1551
+		name = "timer_events.4.1551"
+		trigger = {
+			has_country_flag = xx21
+			NOT = { is_year = 1552 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1551
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1552
+		name = "timer_events.4.1552"
+		trigger = {
+			has_country_flag = xx21
+			NOT = { is_year = 1553 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1552
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1553
+		name = "timer_events.4.1553"
+		trigger = {
+			has_country_flag = xx21
+			NOT = { is_year = 1554 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1553
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1554
+		name = "timer_events.4.1554"
+		trigger = {
+			has_country_flag = xx21
+			NOT = { is_year = 1555 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1554
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1555
+		name = "timer_events.4.1555"
+		trigger = {
+			has_country_flag = xx21
+			NOT = { is_year = 1556 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1555
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1556
+		name = "timer_events.4.1556"
+		trigger = {
+			has_country_flag = xx22
+			NOT = { is_year = 1557 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1556
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1557
+		name = "timer_events.4.1557"
+		trigger = {
+			has_country_flag = xx22
+			NOT = { is_year = 1558 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1557
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1558
+		name = "timer_events.4.1558"
+		trigger = {
+			has_country_flag = xx22
+			NOT = { is_year = 1559 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1558
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1559
+		name = "timer_events.4.1559"
+		trigger = {
+			has_country_flag = xx22
+			NOT = { is_year = 1560 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1559
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1560
+		name = "timer_events.4.1560"
+		trigger = {
+			has_country_flag = xx22
+			NOT = { is_year = 1561 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1560
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1561
+		name = "timer_events.4.1561"
+		trigger = {
+			has_country_flag = xx23
+			NOT = { is_year = 1562 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1561
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1562
+		name = "timer_events.4.1562"
+		trigger = {
+			has_country_flag = xx23
+			NOT = { is_year = 1563 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1562
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1563
+		name = "timer_events.4.1563"
+		trigger = {
+			has_country_flag = xx23
+			NOT = { is_year = 1564 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1563
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1564
+		name = "timer_events.4.1564"
+		trigger = {
+			has_country_flag = xx23
+			NOT = { is_year = 1565 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1564
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1565
+		name = "timer_events.4.1565"
+		trigger = {
+			has_country_flag = xx23
+			NOT = { is_year = 1566 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1565
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1566
+		name = "timer_events.4.1566"
+		trigger = {
+			has_country_flag = xx24
+			NOT = { is_year = 1567 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1566
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1567
+		name = "timer_events.4.1567"
+		trigger = {
+			has_country_flag = xx24
+			NOT = { is_year = 1568 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1567
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1568
+		name = "timer_events.4.1568"
+		trigger = {
+			has_country_flag = xx24
+			NOT = { is_year = 1569 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1568
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1569
+		name = "timer_events.4.1569"
+		trigger = {
+			has_country_flag = xx24
+			NOT = { is_year = 1570 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1569
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1570
+		name = "timer_events.4.1570"
+		trigger = {
+			has_country_flag = xx24
+			NOT = { is_year = 1571 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1570
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1571
+		name = "timer_events.4.1571"
+		trigger = {
+			has_country_flag = xx25
+			NOT = { is_year = 1572 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1571
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1572
+		name = "timer_events.4.1572"
+		trigger = {
+			has_country_flag = xx25
+			NOT = { is_year = 1573 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1572
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1573
+		name = "timer_events.4.1573"
+		trigger = {
+			has_country_flag = xx25
+			NOT = { is_year = 1574 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1573
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1574
+		name = "timer_events.4.1574"
+		trigger = {
+			has_country_flag = xx25
+			NOT = { is_year = 1575 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1574
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1575
+		name = "timer_events.4.1575"
+		trigger = {
+			has_country_flag = xx25
+			NOT = { is_year = 1576 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1575
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1576
+		name = "timer_events.4.1576"
+		trigger = {
+			has_country_flag = xx26
+			NOT = { is_year = 1577 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1576
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1577
+		name = "timer_events.4.1577"
+		trigger = {
+			has_country_flag = xx26
+			NOT = { is_year = 1578 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1577
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1578
+		name = "timer_events.4.1578"
+		trigger = {
+			has_country_flag = xx26
+			NOT = { is_year = 1579 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1578
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1579
+		name = "timer_events.4.1579"
+		trigger = {
+			has_country_flag = xx26
+			NOT = { is_year = 1580 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1579
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1580
+		name = "timer_events.4.1580"
+		trigger = {
+			has_country_flag = xx26
+			NOT = { is_year = 1581 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1580
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1581
+		name = "timer_events.4.1581"
+		trigger = {
+			has_country_flag = xx27
+			NOT = { is_year = 1582 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1581
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1582
+		name = "timer_events.4.1582"
+		trigger = {
+			has_country_flag = xx27
+			NOT = { is_year = 1583 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1582
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1583
+		name = "timer_events.4.1583"
+		trigger = {
+			has_country_flag = xx27
+			NOT = { is_year = 1584 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1583
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1584
+		name = "timer_events.4.1584"
+		trigger = {
+			has_country_flag = xx27
+			NOT = { is_year = 1585 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1584
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1585
+		name = "timer_events.4.1585"
+		trigger = {
+			has_country_flag = xx27
+			NOT = { is_year = 1586 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1585
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1586
+		name = "timer_events.4.1586"
+		trigger = {
+			has_country_flag = xx28
+			NOT = { is_year = 1587 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1586
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1587
+		name = "timer_events.4.1587"
+		trigger = {
+			has_country_flag = xx28
+			NOT = { is_year = 1588 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1587
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1588
+		name = "timer_events.4.1588"
+		trigger = {
+			has_country_flag = xx28
+			NOT = { is_year = 1589 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1588
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1589
+		name = "timer_events.4.1589"
+		trigger = {
+			has_country_flag = xx28
+			NOT = { is_year = 1590 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1589
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1590
+		name = "timer_events.4.1590"
+		trigger = {
+			has_country_flag = xx28
+			NOT = { is_year = 1591 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1590
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1591
+		name = "timer_events.4.1591"
+		trigger = {
+			has_country_flag = xx29
+			NOT = { is_year = 1592 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1591
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1592
+		name = "timer_events.4.1592"
+		trigger = {
+			has_country_flag = xx29
+			NOT = { is_year = 1593 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1592
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1593
+		name = "timer_events.4.1593"
+		trigger = {
+			has_country_flag = xx29
+			NOT = { is_year = 1594 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1593
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1594
+		name = "timer_events.4.1594"
+		trigger = {
+			has_country_flag = xx29
+			NOT = { is_year = 1595 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1594
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1595
+		name = "timer_events.4.1595"
+		trigger = {
+			has_country_flag = xx29
+			NOT = { is_year = 1596 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1595
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1596
+		name = "timer_events.4.1596"
+		trigger = {
+			has_country_flag = xx30
+			NOT = { is_year = 1597 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1596
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1597
+		name = "timer_events.4.1597"
+		trigger = {
+			has_country_flag = xx30
+			NOT = { is_year = 1598 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1597
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1598
+		name = "timer_events.4.1598"
+		trigger = {
+			has_country_flag = xx30
+			NOT = { is_year = 1599 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1598
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1599
+		name = "timer_events.4.1599"
+		trigger = {
+			has_country_flag = xx30
+			NOT = { is_year = 1600 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1599
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1600
+		name = "timer_events.4.1600"
+		trigger = {
+			has_country_flag = xx30
+			NOT = { is_year = 1601 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1600
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1601
+		name = "timer_events.4.1601"
+		trigger = {
+			has_country_flag = xx31
+			NOT = { is_year = 1602 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1601
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1602
+		name = "timer_events.4.1602"
+		trigger = {
+			has_country_flag = xx31
+			NOT = { is_year = 1603 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1602
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1603
+		name = "timer_events.4.1603"
+		trigger = {
+			has_country_flag = xx31
+			NOT = { is_year = 1604 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1603
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1604
+		name = "timer_events.4.1604"
+		trigger = {
+			has_country_flag = xx31
+			NOT = { is_year = 1605 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1604
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1605
+		name = "timer_events.4.1605"
+		trigger = {
+			has_country_flag = xx31
+			NOT = { is_year = 1606 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1605
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1606
+		name = "timer_events.4.1606"
+		trigger = {
+			has_country_flag = xx32
+			NOT = { is_year = 1607 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1606
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1607
+		name = "timer_events.4.1607"
+		trigger = {
+			has_country_flag = xx32
+			NOT = { is_year = 1608 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1607
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1608
+		name = "timer_events.4.1608"
+		trigger = {
+			has_country_flag = xx32
+			NOT = { is_year = 1609 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1608
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1609
+		name = "timer_events.4.1609"
+		trigger = {
+			has_country_flag = xx32
+			NOT = { is_year = 1610 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1609
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1610
+		name = "timer_events.4.1610"
+		trigger = {
+			has_country_flag = xx32
+			NOT = { is_year = 1611 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1610
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1611
+		name = "timer_events.4.1611"
+		trigger = {
+			has_country_flag = xx33
+			NOT = { is_year = 1612 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1611
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1612
+		name = "timer_events.4.1612"
+		trigger = {
+			has_country_flag = xx33
+			NOT = { is_year = 1613 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1612
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1613
+		name = "timer_events.4.1613"
+		trigger = {
+			has_country_flag = xx33
+			NOT = { is_year = 1614 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1613
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1614
+		name = "timer_events.4.1614"
+		trigger = {
+			has_country_flag = xx33
+			NOT = { is_year = 1615 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1614
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1615
+		name = "timer_events.4.1615"
+		trigger = {
+			has_country_flag = xx33
+			NOT = { is_year = 1616 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1615
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1616
+		name = "timer_events.4.1616"
+		trigger = {
+			has_country_flag = xx34
+			NOT = { is_year = 1617 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1616
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1617
+		name = "timer_events.4.1617"
+		trigger = {
+			has_country_flag = xx34
+			NOT = { is_year = 1618 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1617
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1618
+		name = "timer_events.4.1618"
+		trigger = {
+			has_country_flag = xx34
+			NOT = { is_year = 1619 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1618
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1619
+		name = "timer_events.4.1619"
+		trigger = {
+			has_country_flag = xx34
+			NOT = { is_year = 1620 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1619
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1620
+		name = "timer_events.4.1620"
+		trigger = {
+			has_country_flag = xx34
+			NOT = { is_year = 1621 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1620
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1621
+		name = "timer_events.4.1621"
+		trigger = {
+			has_country_flag = xx35
+			NOT = { is_year = 1622 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1621
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1622
+		name = "timer_events.4.1622"
+		trigger = {
+			has_country_flag = xx35
+			NOT = { is_year = 1623 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1622
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1623
+		name = "timer_events.4.1623"
+		trigger = {
+			has_country_flag = xx35
+			NOT = { is_year = 1624 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1623
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1624
+		name = "timer_events.4.1624"
+		trigger = {
+			has_country_flag = xx35
+			NOT = { is_year = 1625 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1624
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1625
+		name = "timer_events.4.1625"
+		trigger = {
+			has_country_flag = xx35
+			NOT = { is_year = 1626 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1625
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1626
+		name = "timer_events.4.1626"
+		trigger = {
+			has_country_flag = xx36
+			NOT = { is_year = 1627 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1626
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1627
+		name = "timer_events.4.1627"
+		trigger = {
+			has_country_flag = xx36
+			NOT = { is_year = 1628 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1627
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1628
+		name = "timer_events.4.1628"
+		trigger = {
+			has_country_flag = xx36
+			NOT = { is_year = 1629 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1628
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1629
+		name = "timer_events.4.1629"
+		trigger = {
+			has_country_flag = xx36
+			NOT = { is_year = 1630 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1629
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1630
+		name = "timer_events.4.1630"
+		trigger = {
+			has_country_flag = xx36
+			NOT = { is_year = 1631 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1630
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1631
+		name = "timer_events.4.1631"
+		trigger = {
+			has_country_flag = xx37
+			NOT = { is_year = 1632 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1631
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1632
+		name = "timer_events.4.1632"
+		trigger = {
+			has_country_flag = xx37
+			NOT = { is_year = 1633 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1632
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1633
+		name = "timer_events.4.1633"
+		trigger = {
+			has_country_flag = xx37
+			NOT = { is_year = 1634 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1633
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1634
+		name = "timer_events.4.1634"
+		trigger = {
+			has_country_flag = xx37
+			NOT = { is_year = 1635 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1634
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1635
+		name = "timer_events.4.1635"
+		trigger = {
+			has_country_flag = xx37
+			NOT = { is_year = 1636 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1635
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1636
+		name = "timer_events.4.1636"
+		trigger = {
+			has_country_flag = xx38
+			NOT = { is_year = 1637 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1636
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1637
+		name = "timer_events.4.1637"
+		trigger = {
+			has_country_flag = xx38
+			NOT = { is_year = 1638 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1637
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1638
+		name = "timer_events.4.1638"
+		trigger = {
+			has_country_flag = xx38
+			NOT = { is_year = 1639 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1638
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1639
+		name = "timer_events.4.1639"
+		trigger = {
+			has_country_flag = xx38
+			NOT = { is_year = 1640 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1639
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1640
+		name = "timer_events.4.1640"
+		trigger = {
+			has_country_flag = xx38
+			NOT = { is_year = 1641 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1640
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1641
+		name = "timer_events.4.1641"
+		trigger = {
+			has_country_flag = xx39
+			NOT = { is_year = 1642 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1641
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1642
+		name = "timer_events.4.1642"
+		trigger = {
+			has_country_flag = xx39
+			NOT = { is_year = 1643 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1642
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1643
+		name = "timer_events.4.1643"
+		trigger = {
+			has_country_flag = xx39
+			NOT = { is_year = 1644 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1643
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1644
+		name = "timer_events.4.1644"
+		trigger = {
+			has_country_flag = xx39
+			NOT = { is_year = 1645 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1644
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1645
+		name = "timer_events.4.1645"
+		trigger = {
+			has_country_flag = xx39
+			NOT = { is_year = 1646 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1645
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1646
+		name = "timer_events.4.1646"
+		trigger = {
+			has_country_flag = xx40
+			NOT = { is_year = 1647 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1646
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1647
+		name = "timer_events.4.1647"
+		trigger = {
+			has_country_flag = xx40
+			NOT = { is_year = 1648 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1647
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1648
+		name = "timer_events.4.1648"
+		trigger = {
+			has_country_flag = xx40
+			NOT = { is_year = 1649 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1648
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1649
+		name = "timer_events.4.1649"
+		trigger = {
+			has_country_flag = xx40
+			NOT = { is_year = 1650 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1649
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1650
+		name = "timer_events.4.1650"
+		trigger = {
+			has_country_flag = xx40
+			NOT = { is_year = 1651 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1650
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1651
+		name = "timer_events.4.1651"
+		trigger = {
+			has_country_flag = xx41
+			NOT = { is_year = 1652 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1651
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1652
+		name = "timer_events.4.1652"
+		trigger = {
+			has_country_flag = xx41
+			NOT = { is_year = 1653 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1652
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1653
+		name = "timer_events.4.1653"
+		trigger = {
+			has_country_flag = xx41
+			NOT = { is_year = 1654 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1653
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1654
+		name = "timer_events.4.1654"
+		trigger = {
+			has_country_flag = xx41
+			NOT = { is_year = 1655 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1654
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1655
+		name = "timer_events.4.1655"
+		trigger = {
+			has_country_flag = xx41
+			NOT = { is_year = 1656 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1655
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1656
+		name = "timer_events.4.1656"
+		trigger = {
+			has_country_flag = xx42
+			NOT = { is_year = 1657 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1656
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1657
+		name = "timer_events.4.1657"
+		trigger = {
+			has_country_flag = xx42
+			NOT = { is_year = 1658 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1657
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1658
+		name = "timer_events.4.1658"
+		trigger = {
+			has_country_flag = xx42
+			NOT = { is_year = 1659 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1658
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1659
+		name = "timer_events.4.1659"
+		trigger = {
+			has_country_flag = xx42
+			NOT = { is_year = 1660 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1659
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1660
+		name = "timer_events.4.1660"
+		trigger = {
+			has_country_flag = xx42
+			NOT = { is_year = 1661 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1660
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1661
+		name = "timer_events.4.1661"
+		trigger = {
+			has_country_flag = xx43
+			NOT = { is_year = 1662 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1661
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1662
+		name = "timer_events.4.1662"
+		trigger = {
+			has_country_flag = xx43
+			NOT = { is_year = 1663 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1662
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1663
+		name = "timer_events.4.1663"
+		trigger = {
+			has_country_flag = xx43
+			NOT = { is_year = 1664 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1663
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1664
+		name = "timer_events.4.1664"
+		trigger = {
+			has_country_flag = xx43
+			NOT = { is_year = 1665 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1664
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1665
+		name = "timer_events.4.1665"
+		trigger = {
+			has_country_flag = xx43
+			NOT = { is_year = 1666 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1665
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1666
+		name = "timer_events.4.1666"
+		trigger = {
+			has_country_flag = xx44
+			NOT = { is_year = 1667 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1666
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1667
+		name = "timer_events.4.1667"
+		trigger = {
+			has_country_flag = xx44
+			NOT = { is_year = 1668 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1667
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1668
+		name = "timer_events.4.1668"
+		trigger = {
+			has_country_flag = xx44
+			NOT = { is_year = 1669 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1668
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1669
+		name = "timer_events.4.1669"
+		trigger = {
+			has_country_flag = xx44
+			NOT = { is_year = 1670 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1669
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1670
+		name = "timer_events.4.1670"
+		trigger = {
+			has_country_flag = xx44
+			NOT = { is_year = 1671 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1670
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1671
+		name = "timer_events.4.1671"
+		trigger = {
+			has_country_flag = xx45
+			NOT = { is_year = 1672 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1671
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1672
+		name = "timer_events.4.1672"
+		trigger = {
+			has_country_flag = xx45
+			NOT = { is_year = 1673 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1672
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1673
+		name = "timer_events.4.1673"
+		trigger = {
+			has_country_flag = xx45
+			NOT = { is_year = 1674 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1673
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1674
+		name = "timer_events.4.1674"
+		trigger = {
+			has_country_flag = xx45
+			NOT = { is_year = 1675 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1674
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1675
+		name = "timer_events.4.1675"
+		trigger = {
+			has_country_flag = xx45
+			NOT = { is_year = 1676 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1675
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1676
+		name = "timer_events.4.1676"
+		trigger = {
+			has_country_flag = xx46
+			NOT = { is_year = 1677 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1676
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1677
+		name = "timer_events.4.1677"
+		trigger = {
+			has_country_flag = xx46
+			NOT = { is_year = 1678 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1677
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1678
+		name = "timer_events.4.1678"
+		trigger = {
+			has_country_flag = xx46
+			NOT = { is_year = 1679 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1678
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1679
+		name = "timer_events.4.1679"
+		trigger = {
+			has_country_flag = xx46
+			NOT = { is_year = 1680 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1679
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1680
+		name = "timer_events.4.1680"
+		trigger = {
+			has_country_flag = xx46
+			NOT = { is_year = 1681 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1680
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1681
+		name = "timer_events.4.1681"
+		trigger = {
+			has_country_flag = xx47
+			NOT = { is_year = 1682 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1681
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1682
+		name = "timer_events.4.1682"
+		trigger = {
+			has_country_flag = xx47
+			NOT = { is_year = 1683 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1682
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1683
+		name = "timer_events.4.1683"
+		trigger = {
+			has_country_flag = xx47
+			NOT = { is_year = 1684 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1683
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1684
+		name = "timer_events.4.1684"
+		trigger = {
+			has_country_flag = xx47
+			NOT = { is_year = 1685 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1684
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1685
+		name = "timer_events.4.1685"
+		trigger = {
+			has_country_flag = xx47
+			NOT = { is_year = 1686 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1685
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1686
+		name = "timer_events.4.1686"
+		trigger = {
+			has_country_flag = xx48
+			NOT = { is_year = 1687 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1686
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1687
+		name = "timer_events.4.1687"
+		trigger = {
+			has_country_flag = xx48
+			NOT = { is_year = 1688 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1687
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1688
+		name = "timer_events.4.1688"
+		trigger = {
+			has_country_flag = xx48
+			NOT = { is_year = 1689 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1688
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1689
+		name = "timer_events.4.1689"
+		trigger = {
+			has_country_flag = xx48
+			NOT = { is_year = 1690 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1689
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1690
+		name = "timer_events.4.1690"
+		trigger = {
+			has_country_flag = xx48
+			NOT = { is_year = 1691 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1690
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1691
+		name = "timer_events.4.1691"
+		trigger = {
+			has_country_flag = xx49
+			NOT = { is_year = 1692 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1691
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1692
+		name = "timer_events.4.1692"
+		trigger = {
+			has_country_flag = xx49
+			NOT = { is_year = 1693 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1692
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1693
+		name = "timer_events.4.1693"
+		trigger = {
+			has_country_flag = xx49
+			NOT = { is_year = 1694 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1693
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1694
+		name = "timer_events.4.1694"
+		trigger = {
+			has_country_flag = xx49
+			NOT = { is_year = 1695 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1694
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1695
+		name = "timer_events.4.1695"
+		trigger = {
+			has_country_flag = xx49
+			NOT = { is_year = 1696 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1695
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1696
+		name = "timer_events.4.1696"
+		trigger = {
+			has_country_flag = xx50
+			NOT = { is_year = 1697 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1696
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1697
+		name = "timer_events.4.1697"
+		trigger = {
+			has_country_flag = xx50
+			NOT = { is_year = 1698 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1697
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1698
+		name = "timer_events.4.1698"
+		trigger = {
+			has_country_flag = xx50
+			NOT = { is_year = 1699 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1698
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1699
+		name = "timer_events.4.1699"
+		trigger = {
+			has_country_flag = xx50
+			NOT = { is_year = 1700 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1699
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1700
+		name = "timer_events.4.1700"
+		trigger = {
+			has_country_flag = xx50
+			NOT = { is_year = 1701 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1700
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1701
+		name = "timer_events.4.1701"
+		trigger = {
+			has_country_flag = xx51
+			NOT = { is_year = 1702 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1701
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1702
+		name = "timer_events.4.1702"
+		trigger = {
+			has_country_flag = xx51
+			NOT = { is_year = 1703 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1702
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1703
+		name = "timer_events.4.1703"
+		trigger = {
+			has_country_flag = xx51
+			NOT = { is_year = 1704 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1703
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1704
+		name = "timer_events.4.1704"
+		trigger = {
+			has_country_flag = xx51
+			NOT = { is_year = 1705 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1704
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1705
+		name = "timer_events.4.1705"
+		trigger = {
+			has_country_flag = xx51
+			NOT = { is_year = 1706 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1705
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1706
+		name = "timer_events.4.1706"
+		trigger = {
+			has_country_flag = xx52
+			NOT = { is_year = 1707 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1706
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1707
+		name = "timer_events.4.1707"
+		trigger = {
+			has_country_flag = xx52
+			NOT = { is_year = 1708 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1707
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1708
+		name = "timer_events.4.1708"
+		trigger = {
+			has_country_flag = xx52
+			NOT = { is_year = 1709 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1708
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1709
+		name = "timer_events.4.1709"
+		trigger = {
+			has_country_flag = xx52
+			NOT = { is_year = 1710 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1709
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1710
+		name = "timer_events.4.1710"
+		trigger = {
+			has_country_flag = xx52
+			NOT = { is_year = 1711 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1710
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1711
+		name = "timer_events.4.1711"
+		trigger = {
+			has_country_flag = xx53
+			NOT = { is_year = 1712 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1711
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1712
+		name = "timer_events.4.1712"
+		trigger = {
+			has_country_flag = xx53
+			NOT = { is_year = 1713 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1712
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1713
+		name = "timer_events.4.1713"
+		trigger = {
+			has_country_flag = xx53
+			NOT = { is_year = 1714 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1713
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1714
+		name = "timer_events.4.1714"
+		trigger = {
+			has_country_flag = xx53
+			NOT = { is_year = 1715 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1714
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1715
+		name = "timer_events.4.1715"
+		trigger = {
+			has_country_flag = xx53
+			NOT = { is_year = 1716 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1715
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1716
+		name = "timer_events.4.1716"
+		trigger = {
+			has_country_flag = xx54
+			NOT = { is_year = 1717 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1716
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1717
+		name = "timer_events.4.1717"
+		trigger = {
+			has_country_flag = xx54
+			NOT = { is_year = 1718 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1717
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1718
+		name = "timer_events.4.1718"
+		trigger = {
+			has_country_flag = xx54
+			NOT = { is_year = 1719 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1718
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1719
+		name = "timer_events.4.1719"
+		trigger = {
+			has_country_flag = xx54
+			NOT = { is_year = 1720 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1719
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1720
+		name = "timer_events.4.1720"
+		trigger = {
+			has_country_flag = xx54
+			NOT = { is_year = 1721 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1720
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1721
+		name = "timer_events.4.1721"
+		trigger = {
+			has_country_flag = xx55
+			NOT = { is_year = 1722 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1721
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1722
+		name = "timer_events.4.1722"
+		trigger = {
+			has_country_flag = xx55
+			NOT = { is_year = 1723 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1722
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1723
+		name = "timer_events.4.1723"
+		trigger = {
+			has_country_flag = xx55
+			NOT = { is_year = 1724 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1723
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1724
+		name = "timer_events.4.1724"
+		trigger = {
+			has_country_flag = xx55
+			NOT = { is_year = 1725 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1724
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1725
+		name = "timer_events.4.1725"
+		trigger = {
+			has_country_flag = xx55
+			NOT = { is_year = 1726 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1725
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1726
+		name = "timer_events.4.1726"
+		trigger = {
+			has_country_flag = xx56
+			NOT = { is_year = 1727 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1726
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1727
+		name = "timer_events.4.1727"
+		trigger = {
+			has_country_flag = xx56
+			NOT = { is_year = 1728 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1727
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1728
+		name = "timer_events.4.1728"
+		trigger = {
+			has_country_flag = xx56
+			NOT = { is_year = 1729 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1728
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1729
+		name = "timer_events.4.1729"
+		trigger = {
+			has_country_flag = xx56
+			NOT = { is_year = 1730 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1729
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1730
+		name = "timer_events.4.1730"
+		trigger = {
+			has_country_flag = xx56
+			NOT = { is_year = 1731 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1730
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1731
+		name = "timer_events.4.1731"
+		trigger = {
+			has_country_flag = xx57
+			NOT = { is_year = 1732 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1731
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1732
+		name = "timer_events.4.1732"
+		trigger = {
+			has_country_flag = xx57
+			NOT = { is_year = 1733 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1732
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1733
+		name = "timer_events.4.1733"
+		trigger = {
+			has_country_flag = xx57
+			NOT = { is_year = 1734 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1733
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1734
+		name = "timer_events.4.1734"
+		trigger = {
+			has_country_flag = xx57
+			NOT = { is_year = 1735 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1734
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1735
+		name = "timer_events.4.1735"
+		trigger = {
+			has_country_flag = xx57
+			NOT = { is_year = 1736 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1735
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1736
+		name = "timer_events.4.1736"
+		trigger = {
+			has_country_flag = xx58
+			NOT = { is_year = 1737 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1736
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1737
+		name = "timer_events.4.1737"
+		trigger = {
+			has_country_flag = xx58
+			NOT = { is_year = 1738 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1737
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1738
+		name = "timer_events.4.1738"
+		trigger = {
+			has_country_flag = xx58
+			NOT = { is_year = 1739 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1738
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1739
+		name = "timer_events.4.1739"
+		trigger = {
+			has_country_flag = xx58
+			NOT = { is_year = 1740 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1739
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1740
+		name = "timer_events.4.1740"
+		trigger = {
+			has_country_flag = xx58
+			NOT = { is_year = 1741 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1740
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1741
+		name = "timer_events.4.1741"
+		trigger = {
+			has_country_flag = xx59
+			NOT = { is_year = 1742 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1741
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1742
+		name = "timer_events.4.1742"
+		trigger = {
+			has_country_flag = xx59
+			NOT = { is_year = 1743 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1742
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1743
+		name = "timer_events.4.1743"
+		trigger = {
+			has_country_flag = xx59
+			NOT = { is_year = 1744 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1743
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1744
+		name = "timer_events.4.1744"
+		trigger = {
+			has_country_flag = xx59
+			NOT = { is_year = 1745 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1744
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1745
+		name = "timer_events.4.1745"
+		trigger = {
+			has_country_flag = xx59
+			NOT = { is_year = 1746 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1745
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1746
+		name = "timer_events.4.1746"
+		trigger = {
+			has_country_flag = xx60
+			NOT = { is_year = 1747 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1746
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1747
+		name = "timer_events.4.1747"
+		trigger = {
+			has_country_flag = xx60
+			NOT = { is_year = 1748 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1747
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1748
+		name = "timer_events.4.1748"
+		trigger = {
+			has_country_flag = xx60
+			NOT = { is_year = 1749 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1748
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1749
+		name = "timer_events.4.1749"
+		trigger = {
+			has_country_flag = xx60
+			NOT = { is_year = 1750 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1749
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1750
+		name = "timer_events.4.1750"
+		trigger = {
+			has_country_flag = xx60
+			NOT = { is_year = 1751 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1750
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1751
+		name = "timer_events.4.1751"
+		trigger = {
+			has_country_flag = xx61
+			NOT = { is_year = 1752 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1751
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1752
+		name = "timer_events.4.1752"
+		trigger = {
+			has_country_flag = xx61
+			NOT = { is_year = 1753 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1752
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1753
+		name = "timer_events.4.1753"
+		trigger = {
+			has_country_flag = xx61
+			NOT = { is_year = 1754 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1753
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1754
+		name = "timer_events.4.1754"
+		trigger = {
+			has_country_flag = xx61
+			NOT = { is_year = 1755 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1754
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1755
+		name = "timer_events.4.1755"
+		trigger = {
+			has_country_flag = xx61
+			NOT = { is_year = 1756 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1755
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1756
+		name = "timer_events.4.1756"
+		trigger = {
+			has_country_flag = xx62
+			NOT = { is_year = 1757 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1756
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1757
+		name = "timer_events.4.1757"
+		trigger = {
+			has_country_flag = xx62
+			NOT = { is_year = 1758 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1757
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1758
+		name = "timer_events.4.1758"
+		trigger = {
+			has_country_flag = xx62
+			NOT = { is_year = 1759 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1758
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1759
+		name = "timer_events.4.1759"
+		trigger = {
+			has_country_flag = xx62
+			NOT = { is_year = 1760 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1759
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1760
+		name = "timer_events.4.1760"
+		trigger = {
+			has_country_flag = xx62
+			NOT = { is_year = 1761 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1760
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1761
+		name = "timer_events.4.1761"
+		trigger = {
+			has_country_flag = xx63
+			NOT = { is_year = 1762 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1761
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1762
+		name = "timer_events.4.1762"
+		trigger = {
+			has_country_flag = xx63
+			NOT = { is_year = 1763 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1762
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1763
+		name = "timer_events.4.1763"
+		trigger = {
+			has_country_flag = xx63
+			NOT = { is_year = 1764 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1763
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1764
+		name = "timer_events.4.1764"
+		trigger = {
+			has_country_flag = xx63
+			NOT = { is_year = 1765 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1764
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1765
+		name = "timer_events.4.1765"
+		trigger = {
+			has_country_flag = xx63
+			NOT = { is_year = 1766 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1765
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1766
+		name = "timer_events.4.1766"
+		trigger = {
+			has_country_flag = xx64
+			NOT = { is_year = 1767 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1766
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1767
+		name = "timer_events.4.1767"
+		trigger = {
+			has_country_flag = xx64
+			NOT = { is_year = 1768 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1767
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1768
+		name = "timer_events.4.1768"
+		trigger = {
+			has_country_flag = xx64
+			NOT = { is_year = 1769 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1768
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1769
+		name = "timer_events.4.1769"
+		trigger = {
+			has_country_flag = xx64
+			NOT = { is_year = 1770 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1769
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1770
+		name = "timer_events.4.1770"
+		trigger = {
+			has_country_flag = xx64
+			NOT = { is_year = 1771 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1770
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1771
+		name = "timer_events.4.1771"
+		trigger = {
+			has_country_flag = xx65
+			NOT = { is_year = 1772 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1771
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1772
+		name = "timer_events.4.1772"
+		trigger = {
+			has_country_flag = xx65
+			NOT = { is_year = 1773 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1772
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1773
+		name = "timer_events.4.1773"
+		trigger = {
+			has_country_flag = xx65
+			NOT = { is_year = 1774 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1773
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1774
+		name = "timer_events.4.1774"
+		trigger = {
+			has_country_flag = xx65
+			NOT = { is_year = 1775 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1774
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1775
+		name = "timer_events.4.1775"
+		trigger = {
+			has_country_flag = xx65
+			NOT = { is_year = 1776 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1775
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1776
+		name = "timer_events.4.1776"
+		trigger = {
+			has_country_flag = xx66
+			NOT = { is_year = 1777 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1776
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1777
+		name = "timer_events.4.1777"
+		trigger = {
+			has_country_flag = xx66
+			NOT = { is_year = 1778 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1777
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1778
+		name = "timer_events.4.1778"
+		trigger = {
+			has_country_flag = xx66
+			NOT = { is_year = 1779 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1778
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1779
+		name = "timer_events.4.1779"
+		trigger = {
+			has_country_flag = xx66
+			NOT = { is_year = 1780 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1779
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1780
+		name = "timer_events.4.1780"
+		trigger = {
+			has_country_flag = xx66
+			NOT = { is_year = 1781 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1780
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1781
+		name = "timer_events.4.1781"
+		trigger = {
+			has_country_flag = xx67
+			NOT = { is_year = 1782 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1781
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1782
+		name = "timer_events.4.1782"
+		trigger = {
+			has_country_flag = xx67
+			NOT = { is_year = 1783 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1782
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1783
+		name = "timer_events.4.1783"
+		trigger = {
+			has_country_flag = xx67
+			NOT = { is_year = 1784 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1783
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1784
+		name = "timer_events.4.1784"
+		trigger = {
+			has_country_flag = xx67
+			NOT = { is_year = 1785 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1784
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1785
+		name = "timer_events.4.1785"
+		trigger = {
+			has_country_flag = xx67
+			NOT = { is_year = 1786 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1785
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1786
+		name = "timer_events.4.1786"
+		trigger = {
+			has_country_flag = xx68
+			NOT = { is_year = 1787 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1786
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1787
+		name = "timer_events.4.1787"
+		trigger = {
+			has_country_flag = xx68
+			NOT = { is_year = 1788 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1787
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1788
+		name = "timer_events.4.1788"
+		trigger = {
+			has_country_flag = xx68
+			NOT = { is_year = 1789 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1788
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1789
+		name = "timer_events.4.1789"
+		trigger = {
+			has_country_flag = xx68
+			NOT = { is_year = 1790 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1789
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1790
+		name = "timer_events.4.1790"
+		trigger = {
+			has_country_flag = xx68
+			NOT = { is_year = 1791 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1790
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1791
+		name = "timer_events.4.1791"
+		trigger = {
+			has_country_flag = xx69
+			NOT = { is_year = 1792 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1791
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1792
+		name = "timer_events.4.1792"
+		trigger = {
+			has_country_flag = xx69
+			NOT = { is_year = 1793 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1792
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1793
+		name = "timer_events.4.1793"
+		trigger = {
+			has_country_flag = xx69
+			NOT = { is_year = 1794 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1793
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1794
+		name = "timer_events.4.1794"
+		trigger = {
+			has_country_flag = xx69
+			NOT = { is_year = 1795 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1794
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1795
+		name = "timer_events.4.1795"
+		trigger = {
+			has_country_flag = xx69
+			NOT = { is_year = 1796 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1795
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1796
+		name = "timer_events.4.1796"
+		trigger = {
+			has_country_flag = xx70
+			NOT = { is_year = 1797 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1796
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1797
+		name = "timer_events.4.1797"
+		trigger = {
+			has_country_flag = xx70
+			NOT = { is_year = 1798 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1797
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1798
+		name = "timer_events.4.1798"
+		trigger = {
+			has_country_flag = xx70
+			NOT = { is_year = 1799 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1798
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1799
+		name = "timer_events.4.1799"
+		trigger = {
+			has_country_flag = xx70
+			NOT = { is_year = 1800 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1799
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1800
+		name = "timer_events.4.1800"
+		trigger = {
+			has_country_flag = xx70
+			NOT = { is_year = 1801 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1800
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1801
+		name = "timer_events.4.1801"
+		trigger = {
+			has_country_flag = xx71
+			NOT = { is_year = 1802 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1801
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1802
+		name = "timer_events.4.1802"
+		trigger = {
+			has_country_flag = xx71
+			NOT = { is_year = 1803 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1802
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1803
+		name = "timer_events.4.1803"
+		trigger = {
+			has_country_flag = xx71
+			NOT = { is_year = 1804 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1803
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1804
+		name = "timer_events.4.1804"
+		trigger = {
+			has_country_flag = xx71
+			NOT = { is_year = 1805 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1804
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1805
+		name = "timer_events.4.1805"
+		trigger = {
+			has_country_flag = xx71
+			NOT = { is_year = 1806 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1805
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1806
+		name = "timer_events.4.1806"
+		trigger = {
+			has_country_flag = xx72
+			NOT = { is_year = 1807 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1806
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1807
+		name = "timer_events.4.1807"
+		trigger = {
+			has_country_flag = xx72
+			NOT = { is_year = 1808 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1807
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1808
+		name = "timer_events.4.1808"
+		trigger = {
+			has_country_flag = xx72
+			NOT = { is_year = 1809 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1808
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1809
+		name = "timer_events.4.1809"
+		trigger = {
+			has_country_flag = xx72
+			NOT = { is_year = 1810 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1809
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1810
+		name = "timer_events.4.1810"
+		trigger = {
+			has_country_flag = xx72
+			NOT = { is_year = 1811 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1810
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1811
+		name = "timer_events.4.1811"
+		trigger = {
+			has_country_flag = xx73
+			NOT = { is_year = 1812 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1811
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1812
+		name = "timer_events.4.1812"
+		trigger = {
+			has_country_flag = xx73
+			NOT = { is_year = 1813 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1812
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1813
+		name = "timer_events.4.1813"
+		trigger = {
+			has_country_flag = xx73
+			NOT = { is_year = 1814 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1813
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1814
+		name = "timer_events.4.1814"
+		trigger = {
+			has_country_flag = xx73
+			NOT = { is_year = 1815 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1814
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1815
+		name = "timer_events.4.1815"
+		trigger = {
+			has_country_flag = xx73
+			NOT = { is_year = 1816 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1815
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1816
+		name = "timer_events.4.1816"
+		trigger = {
+			has_country_flag = xx74
+			NOT = { is_year = 1817 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1816
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1817
+		name = "timer_events.4.1817"
+		trigger = {
+			has_country_flag = xx74
+			NOT = { is_year = 1818 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1817
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1818
+		name = "timer_events.4.1818"
+		trigger = {
+			has_country_flag = xx74
+			NOT = { is_year = 1819 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1818
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1819
+		name = "timer_events.4.1819"
+		trigger = {
+			has_country_flag = xx74
+			NOT = { is_year = 1820 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1819
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1820
+		name = "timer_events.4.1820"
+		trigger = {
+			has_country_flag = xx74
+			NOT = { is_year = 1821 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1820
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	option = { #1821
+		name = "timer_events.4.1821"
+		trigger = {
+			has_country_flag = xx74
+			#NOT = { is_year = 1822 }
+		}
+		set_variable = {
+			which = timer_year
+			value = 1821
+		}
+		country_event = {
+			id = timer_events.5
+		}
+	}
+	
+	after = {
+		REB = {
+			set_variable = {
+				which = timer_year
+				which = ROOT
+			}
+		}
+	}
+}
+
+country_event = { #set month
+	id = timer_events.5
+	title = timer_events.5.t
+	desc = timer_events.5.d
+	picture = COLONIZATION_eventPicture
+	is_triggered_only = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						which = this_year
+						value = trigger_value:is_year
+					}
+					check_variable = {
+						which = timer_year
+						which = this_year
+					}
+					check_variable = {
+						which = this_year
+						which = timer_year
+					}
+				}
+			}
+			set_country_flag = thisYear
+		}
+		else = {
+			clr_country_flag = thisYear
+		}
+	}
+	
+	option = { #1-3
+		name = "timer_events.5.mon13"
+		trigger = {
+			OR = {
+				NOT = { is_month = 3 }
+				NOT = { has_country_flag = thisYear }
+			}
+		}
+		set_country_flag = mon13
+		country_event = {
+			id = timer_events.6
+		}
+		clr_country_flag = mon13
+	}
+	option = { #4-6
+		name = "timer_events.5.mon46"
+		trigger = {
+			OR = {
+				NOT = { is_month = 6 }
+				NOT = { has_country_flag = thisYear }
+			}
+		}
+		set_country_flag = mon46
+		country_event = {
+			id = timer_events.6
+		}
+		clr_country_flag = mon46
+	}
+	option = { #7-9
+		name = "timer_events.5.mon79"
+		trigger = {
+			OR = {
+				NOT = { is_month = 9 }
+				NOT = { has_country_flag = thisYear }
+			}
+		}
+		set_country_flag = mon79
+		country_event = {
+			id = timer_events.6
+		}
+		clr_country_flag = mon79
+	}
+	option = { #10-12
+		name = "timer_events.5.mon1012"
+		trigger = {
+			always = yes
+		}
+		set_country_flag = mon1012
+		country_event = {
+			id = timer_events.6
+		}
+		clr_country_flag = mon1012
+	}
+	
+	after = {
+		#none
+	}
+}
+
+country_event = { #set month
+	id = timer_events.6
+	title = timer_events.6.t
+	desc = timer_events.6.d
+	picture = COLONIZATION_eventPicture
+	is_triggered_only = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						which = this_year
+						value = trigger_value:is_year
+					}
+					check_variable = {
+						which = timer_year
+						which = this_year
+					}
+					check_variable = {
+						which = this_year
+						which = timer_year
+					}
+				}
+			}
+			set_country_flag = thisYear
+		}
+		else = {
+			clr_country_flag = thisYear
+		}
+	}
+	
+	option = { #1
+		name = "timer_events.6.mon1"
+		trigger = {
+			has_country_flag = mon13
+			OR = {
+				NOT = { is_month = 1 }
+				NOT = { has_country_flag = thisYear }
+			}
+		}
+		set_variable = {
+			which = timer_month
+			value = 1
+		}
+		country_event = {
+			id = timer_events.7
+		}
+	}
+	option = { #2
+		name = "timer_events.6.mon2"
+		trigger = {
+			has_country_flag = mon13
+			OR = {
+				NOT = { is_month = 2 }
+				NOT = { has_country_flag = thisYear }
+			}
+		}
+		set_variable = {
+			which = timer_month
+			value = 2
+		}
+		country_event = {
+			id = timer_events.7
+		}
+	}
+	option = { #3
+		name = "timer_events.6.mon3"
+		trigger = {
+			has_country_flag = mon13
+			OR = {
+				NOT = { is_month = 3 }
+				NOT = { has_country_flag = thisYear }
+			}
+		}
+		set_variable = {
+			which = timer_month
+			value = 3
+		}
+		country_event = {
+			id = timer_events.7
+		}
+	}
+	option = { #4
+		name = "timer_events.6.mon4"
+		trigger = {
+			has_country_flag = mon46
+			OR = {
+				NOT = { is_month = 4 }
+				NOT = { has_country_flag = thisYear }
+			}
+		}
+		set_variable = {
+			which = timer_month
+			value = 4
+		}
+		country_event = {
+			id = timer_events.7
+		}
+	}
+	option = { #5
+		name = "timer_events.6.mon5"
+		trigger = {
+			has_country_flag = mon46
+			OR = {
+				NOT = { is_month = 5 }
+				NOT = { has_country_flag = thisYear }
+			}
+		}
+		set_variable = {
+			which = timer_month
+			value = 5
+		}
+		country_event = {
+			id = timer_events.7
+		}
+	}
+	option = { #6
+		name = "timer_events.6.mon6"
+		trigger = {
+			has_country_flag = mon46
+			OR = {
+				NOT = { is_month = 6 }
+				NOT = { has_country_flag = thisYear }
+			}
+		}
+		set_variable = {
+			which = timer_month
+			value = 6
+		}
+		country_event = {
+			id = timer_events.7
+		}
+	}
+	option = { #7
+		name = "timer_events.6.mon7"
+		trigger = {
+			has_country_flag = mon79
+			OR = {
+				NOT = { is_month = 7 }
+				NOT = { has_country_flag = thisYear }
+			}
+		}
+		set_variable = {
+			which = timer_month
+			value = 7
+		}
+		country_event = {
+			id = timer_events.7
+		}
+	}
+	option = { #8
+		name = "timer_events.6.mon8"
+		trigger = {
+			has_country_flag = mon79
+			OR = {
+				NOT = { is_month = 8 }
+				NOT = { has_country_flag = thisYear }
+			}
+		}
+		set_variable = {
+			which = timer_month
+			value = 8
+		}
+		country_event = {
+			id = timer_events.7
+		}
+	}
+	option = { #9
+		name = "timer_events.6.mon9"
+		trigger = {
+			has_country_flag = mon79
+			OR = {
+				NOT = { is_month = 9 }
+				NOT = { has_country_flag = thisYear }
+			}
+		}
+		set_variable = {
+			which = timer_month
+			value = 9
+		}
+		country_event = {
+			id = timer_events.7
+		}
+	}
+	option = { #10
+		name = "timer_events.6.mon10"
+		trigger = {
+			has_country_flag = mon1012
+			OR = {
+				NOT = { is_month = 10 }
+				NOT = { has_country_flag = thisYear }
+			}
+		}
+		set_variable = {
+			which = timer_month
+			value = 10
+		}
+		country_event = {
+			id = timer_events.7
+		}
+	}
+	option = { #11
+		name = "timer_events.6.mon11"
+		trigger = {
+			has_country_flag = mon1012
+			OR = {
+				NOT = { is_month = 11 }
+				NOT = { has_country_flag = thisYear }
+			}
+		}
+		set_variable = {
+			which = timer_month
+			value = 11
+		}
+		country_event = {
+			id = timer_events.7
+		}
+	}
+	option = { #12
+		name = "timer_events.6.mon12"
+		trigger = {
+			has_country_flag = mon1012
+			OR = {
+				NOT = { is_month = 12 }
+				NOT = { has_country_flag = thisYear }
+			}
+		}
+		set_variable = {
+			which = timer_month
+			value = 12
+		}
+		country_event = {
+			id = timer_events.7
+		}
+	}
+	
+	after = {
+		REB = {
+			set_variable = {
+				which = timer_month
+				which = ROOT
+			}
+		}
+	}
+}
+
+country_event = { #set day
+	id = timer_events.7
+	title = timer_events.7.t
+	desc = timer_events.7.d
+	picture = COLONIZATION_eventPicture
+	is_triggered_only = yes
+	
+	immediate = {
+		#none
+	}
+	
+	option = { #1-5
+		name = "timer_events.7.day15"
+		trigger = {
+			always = yes
+		}
+		set_country_flag = day15
+		country_event = {
+			id = timer_events.8
+		}
+		clr_country_flag = day15
+	}
+	option = { #6-10
+		name = "timer_events.7.day610"
+		trigger = {
+			always = yes
+		}
+		set_country_flag = day610
+		country_event = {
+			id = timer_events.8
+		}
+		clr_country_flag = day610
+	}
+	option = { #11-15
+		name = "timer_events.7.day1115"
+		trigger = {
+			always = yes
+		}
+		set_country_flag = day1115
+		country_event = {
+			id = timer_events.8
+		}
+		clr_country_flag = day1115
+	}
+	option = { #16-20
+		name = "timer_events.7.day1620"
+		trigger = {
+			always = yes
+		}
+		set_country_flag = day1620
+		country_event = {
+			id = timer_events.8
+		}
+		clr_country_flag = day1620
+	}
+	option = { #21-25
+		name = "timer_events.7.day2125"
+		trigger = {
+			always = yes
+		}
+		set_country_flag = day2125
+		country_event = {
+			id = timer_events.8
+		}
+		clr_country_flag = day2125
+	}
+	option = { #26-28/30/31
+		name = "timer_events.7.day26x"
+		trigger = {
+			always = yes
+		}
+		set_country_flag = day26x
+		country_event = {
+			id = timer_events.8
+		}
+		clr_country_flag = day26x
+	}
+	
+	after = {
+		#none
+	}
+}
+
+country_event = { #set day
+	id = timer_events.8
+	title = timer_events.8.t
+	desc = timer_events.8.d
+	picture = COLONIZATION_eventPicture
+	is_triggered_only = yes
+	
+	immediate = {
+		#none
+	}
+	
+	option = { #1
+		name = "timer_events.8.day1"
+		trigger = {
+			has_country_flag = day15
+		}
+		set_variable = {
+			which = timer_day
+			value = 1
+		}
+	}
+	option = { #2
+		name = "timer_events.8.day2"
+		trigger = {
+			has_country_flag = day15
+		}
+		set_variable = {
+			which = timer_day
+			value = 2
+		}
+	}
+	option = { #3
+		name = "timer_events.8.day3"
+		trigger = {
+			has_country_flag = day15
+		}
+		set_variable = {
+			which = timer_day
+			value = 3
+		}
+	}
+	option = { #4
+		name = "timer_events.8.day4"
+		trigger = {
+			has_country_flag = day15
+		}
+		set_variable = {
+			which = timer_day
+			value = 4
+		}
+	}
+	option = { #5
+		name = "timer_events.8.day5"
+		trigger = {
+			has_country_flag = day15
+		}
+		set_variable = {
+			which = timer_day
+			value = 5
+		}
+	}
+	option = { #6
+		name = "timer_events.8.day6"
+		trigger = {
+			has_country_flag = day610
+		}
+		set_variable = {
+			which = timer_day
+			value = 6
+		}
+	}
+	option = { #7
+		name = "timer_events.8.day7"
+		trigger = {
+			has_country_flag = day610
+		}
+		set_variable = {
+			which = timer_day
+			value = 7
+		}
+	}
+	option = { #8
+		name = "timer_events.8.day8"
+		trigger = {
+			has_country_flag = day610
+		}
+		set_variable = {
+			which = timer_day
+			value = 8
+		}
+	}
+	option = { #9
+		name = "timer_events.8.day9"
+		trigger = {
+			has_country_flag = day610
+		}
+		set_variable = {
+			which = timer_day
+			value = 9
+		}
+	}
+	option = { #10
+		name = "timer_events.8.day10"
+		trigger = {
+			has_country_flag = day610
+		}
+		set_variable = {
+			which = timer_day
+			value = 10
+		}
+	}
+	option = { #11
+		name = "timer_events.8.day11"
+		trigger = {
+			has_country_flag = day1115
+		}
+		set_variable = {
+			which = timer_day
+			value = 11
+		}
+	}
+	option = { #12
+		name = "timer_events.8.day12"
+		trigger = {
+			has_country_flag = day1115
+		}
+		set_variable = {
+			which = timer_day
+			value = 12
+		}
+	}
+	option = { #13
+		name = "timer_events.8.day13"
+		trigger = {
+			has_country_flag = day1115
+		}
+		set_variable = {
+			which = timer_day
+			value = 13
+		}
+	}
+	option = { #14
+		name = "timer_events.8.day14"
+		trigger = {
+			has_country_flag = day1115
+		}
+		set_variable = {
+			which = timer_day
+			value = 14
+		}
+	}
+	option = { #15
+		name = "timer_events.8.day15"
+		trigger = {
+			has_country_flag = day1115
+		}
+		set_variable = {
+			which = timer_day
+			value = 15
+		}
+	}
+	option = { #16
+		name = "timer_events.8.day16"
+		trigger = {
+			has_country_flag = day1620
+		}
+		set_variable = {
+			which = timer_day
+			value = 16
+		}
+	}
+	option = { #17
+		name = "timer_events.8.day17"
+		trigger = {
+			has_country_flag = day1620
+		}
+		set_variable = {
+			which = timer_day
+			value = 17
+		}
+	}
+	option = { #18
+		name = "timer_events.8.day18"
+		trigger = {
+			has_country_flag = day1620
+		}
+		set_variable = {
+			which = timer_day
+			value = 18
+		}
+	}
+	option = { #19
+		name = "timer_events.8.day19"
+		trigger = {
+			has_country_flag = day1620
+		}
+		set_variable = {
+			which = timer_day
+			value = 19
+		}
+	}
+	option = { #20
+		name = "timer_events.8.day20"
+		trigger = {
+			has_country_flag = day1620
+		}
+		set_variable = {
+			which = timer_day
+			value = 20
+		}
+	}
+	option = { #21
+		name = "timer_events.8.day21"
+		trigger = {
+			has_country_flag = day2125
+		}
+		set_variable = {
+			which = timer_day
+			value = 21
+		}
+	}
+	option = { #22
+		name = "timer_events.8.day22"
+		trigger = {
+			has_country_flag = day2125
+		}
+		set_variable = {
+			which = timer_day
+			value = 22
+		}
+	}
+	option = { #23
+		name = "timer_events.8.day23"
+		trigger = {
+			has_country_flag = day2125
+		}
+		set_variable = {
+			which = timer_day
+			value = 23
+		}
+	}
+	option = { #24
+		name = "timer_events.8.day24"
+		trigger = {
+			has_country_flag = day2125
+		}
+		set_variable = {
+			which = timer_day
+			value = 24
+		}
+	}
+	option = { #25
+		name = "timer_events.8.day25"
+		trigger = {
+			has_country_flag = day2125
+		}
+		set_variable = {
+			which = timer_day
+			value = 25
+		}
+	}
+	option = { #26
+		name = "timer_events.8.day26"
+		trigger = {
+			has_country_flag = day26x
+		}
+		set_variable = {
+			which = timer_day
+			value = 26
+		}
+	}
+	option = { #27
+		name = "timer_events.8.day27"
+		trigger = {
+			has_country_flag = day26x
+		}
+		set_variable = {
+			which = timer_day
+			value = 27
+		}
+	}
+	option = { #28
+		name = "timer_events.8.day28"
+		trigger = {
+			has_country_flag = day26x
+		}
+		set_variable = {
+			which = timer_day
+			value = 28
+		}
+	}
+	option = { #29
+		name = "timer_events.8.day29"
+		trigger = {
+			has_country_flag = day26x
+			OR = {
+				NOT = {
+					check_variable = {
+						which = timer_month
+						value = 2
+					}
+				}
+				check_variable = {
+					which = timer_month
+					value = 3
+				}
+			}
+		}
+		set_variable = {
+			which = timer_day
+			value = 29
+		}
+	}
+	option = { #30
+		name = "timer_events.8.day30"
+		trigger = {
+			has_country_flag = day26x
+			OR = {
+				NOT = {
+					check_variable = {
+						which = timer_month
+						value = 2
+					}
+				}
+				check_variable = {
+					which = timer_month
+					value = 3
+				}
+			}
+		}
+		set_variable = {
+			which = timer_day
+			value = 30
+		}
+	}
+	option = { #31
+		name = "timer_events.8.day31"
+		trigger = {
+			has_country_flag = day26x
+			OR = {
+				AND = {
+					check_variable = {
+						which = timer_month
+						value = 1
+					}
+					NOT = {
+						check_variable = {
+							which = timer_month
+							value = 2
+						}
+					}
+				}
+				AND = {
+					check_variable = {
+						which = timer_month
+						value = 3
+					}
+					NOT = {
+						check_variable = {
+							which = timer_month
+							value = 4
+						}
+					}
+				}
+				AND = {
+					check_variable = {
+						which = timer_month
+						value = 5
+					}
+					NOT = {
+						check_variable = {
+							which = timer_month
+							value = 6
+						}
+					}
+				}
+				AND = {
+					check_variable = {
+						which = timer_month
+						value = 7
+					}
+					NOT = {
+						check_variable = {
+							which = timer_month
+							value = 9
+						}
+					}
+				}
+				AND = {
+					check_variable = {
+						which = timer_month
+						value = 10
+					}
+					NOT = {
+						check_variable = {
+							which = timer_month
+							value = 11
+						}
+					}
+				}
+				check_variable = {
+					which = timer_month
+					value = 12
+				}
+			}
+		}
+		set_variable = {
+			which = timer_day
+			value = 31
+		}
+	}
+	
+	after = {
+		REB = {
+			set_variable = {
+				which = timer_day
+				which = ROOT
+			}
+		}
+	}
+}
+
+country_event = { #timer
+	id = timer_events.9
+	title = timer_events.9.t
+	desc = timer_events.9.d
+	picture = COLONIZATION_eventPicture
+	#is_triggered_only = yes
+	hidden = yes
+	
+	trigger = {
+		REB = {
+			has_country_flag = timer_active
+			
+			variable_arithmetic_trigger = {
+				export_to_variable = {
+					which = this_year
+					value = trigger_value:is_year
+				}
+				check_variable = {
+					which = timer_year
+					which = this_year
+				}
+				check_variable = {
+					which = this_year
+					which = timer_year
+				}
+			}
+			variable_arithmetic_trigger = {
+				export_to_variable = {
+					which = this_month
+					value = trigger_value:is_month
+				}
+				change_variable = {
+					which = this_month
+					value = 1
+				}
+				check_variable = {
+					which = timer_month
+					which = this_month
+				}
+				check_variable = {
+					which = this_month
+					which = timer_month
+				}
+			}
+			
+			OR = {
+				had_country_flag = { flag = oneMonth	days = 31 }
+				NOT = { has_country_flag = oneMonth }
+			}
+		}
+	}
+	
+	immediate = {
+		REB = {
+			clr_country_flag = oneMonth
+			set_country_flag = oneMonth
+		}
+		every_country = {
+			limit = {
+				has_country_flag = timer_active
+				NOT = { tag = REB }
+			}
+			country_event = {
+				id = timer_events.10
+			}
+		}
+	}
+	
+	option = {
+		#none
+	}
+	
+	after = {
+		#none
+	}
+}
+
+country_event = { #timer
+	id = timer_events.10
+	title = timer_events.10.t
+	desc = timer_events.10.d
+	picture = COLONIZATION_eventPicture
+	is_triggered_only = yes
+	hidden = yes
+	
+	immediate = {
+		if = { #1
+			limit = {
+				NOT = {
+					check_variable = {
+						which = timer_day
+						value = 2
+					}
+				}
+			}
+			country_event = {
+				id = timer_events.11
+				days = 0
+			}
+		}
+		else_if = { #2
+			limit = {
+				NOT = {
+					check_variable = {
+						which = timer_day
+						value = 3
+					}
+				}
+			}
+			country_event = {
+				id = timer_events.11
+				days = 1
+			}
+		}
+		else_if = { #3
+			limit = {
+				NOT = {
+					check_variable = {
+						which = timer_day
+						value = 4
+					}
+				}
+			}
+			country_event = {
+				id = timer_events.11
+				days = 2
+			}
+		}
+		else_if = { #4
+			limit = {
+				NOT = {
+					check_variable = {
+						which = timer_day
+						value = 5
+					}
+				}
+			}
+			country_event = {
+				id = timer_events.11
+				days = 3
+			}
+		}
+		else_if = { #5
+			limit = {
+				NOT = {
+					check_variable = {
+						which = timer_day
+						value = 6
+					}
+				}
+			}
+			country_event = {
+				id = timer_events.11
+				days = 4
+			}
+		}
+		else_if = { #6
+			limit = {
+				NOT = {
+					check_variable = {
+						which = timer_day
+						value = 7
+					}
+				}
+			}
+			country_event = {
+				id = timer_events.11
+				days = 5
+			}
+		}
+		else_if = { #7
+			limit = {
+				NOT = {
+					check_variable = {
+						which = timer_day
+						value = 8
+					}
+				}
+			}
+			country_event = {
+				id = timer_events.11
+				days = 6
+			}
+		}
+		else_if = { #8
+			limit = {
+				NOT = {
+					check_variable = {
+						which = timer_day
+						value = 9
+					}
+				}
+			}
+			country_event = {
+				id = timer_events.11
+				days = 7
+			}
+		}
+		else_if = { #9
+			limit = {
+				NOT = {
+					check_variable = {
+						which = timer_day
+						value = 10
+					}
+				}
+			}
+			country_event = {
+				id = timer_events.11
+				days = 8
+			}
+		}
+		else_if = { #10
+			limit = {
+				NOT = {
+					check_variable = {
+						which = timer_day
+						value = 11
+					}
+				}
+			}
+			country_event = {
+				id = timer_events.11
+				days = 9
+			}
+		}
+		else_if = { #11
+			limit = {
+				NOT = {
+					check_variable = {
+						which = timer_day
+						value = 12
+					}
+				}
+			}
+			country_event = {
+				id = timer_events.11
+				days = 10
+			}
+		}
+		else_if = { #12
+			limit = {
+				NOT = {
+					check_variable = {
+						which = timer_day
+						value = 13
+					}
+				}
+			}
+			country_event = {
+				id = timer_events.11
+				days = 11
+			}
+		}
+		else_if = { #13
+			limit = {
+				NOT = {
+					check_variable = {
+						which = timer_day
+						value = 14
+					}
+				}
+			}
+			country_event = {
+				id = timer_events.11
+				days = 12
+			}
+		}
+		else_if = { #14
+			limit = {
+				NOT = {
+					check_variable = {
+						which = timer_day
+						value = 15
+					}
+				}
+			}
+			country_event = {
+				id = timer_events.11
+				days = 13
+			}
+		}
+		else_if = { #15
+			limit = {
+				NOT = {
+					check_variable = {
+						which = timer_day
+						value = 16
+					}
+				}
+			}
+			country_event = {
+				id = timer_events.11
+				days = 14
+			}
+		}
+		else_if = { #16
+			limit = {
+				NOT = {
+					check_variable = {
+						which = timer_day
+						value = 17
+					}
+				}
+			}
+			country_event = {
+				id = timer_events.11
+				days = 15
+			}
+		}
+		else_if = { #17
+			limit = {
+				NOT = {
+					check_variable = {
+						which = timer_day
+						value = 18
+					}
+				}
+			}
+			country_event = {
+				id = timer_events.11
+				days = 16
+			}
+		}
+		else_if = { #18
+			limit = {
+				NOT = {
+					check_variable = {
+						which = timer_day
+						value = 19
+					}
+				}
+			}
+			country_event = {
+				id = timer_events.11
+				days = 17
+			}
+		}
+		else_if = { #19
+			limit = {
+				NOT = {
+					check_variable = {
+						which = timer_day
+						value = 20
+					}
+				}
+			}
+			country_event = {
+				id = timer_events.11
+				days = 18
+			}
+		}
+		else_if = { #20
+			limit = {
+				NOT = {
+					check_variable = {
+						which = timer_day
+						value = 21
+					}
+				}
+			}
+			country_event = {
+				id = timer_events.11
+				days = 19
+			}
+		}
+		else_if = { #21
+			limit = {
+				NOT = {
+					check_variable = {
+						which = timer_day
+						value = 22
+					}
+				}
+			}
+			country_event = {
+				id = timer_events.11
+				days = 20
+			}
+		}
+		else_if = { #22
+			limit = {
+				NOT = {
+					check_variable = {
+						which = timer_day
+						value = 23
+					}
+				}
+			}
+			country_event = {
+				id = timer_events.11
+				days = 21
+			}
+		}
+		else_if = { #23
+			limit = {
+				NOT = {
+					check_variable = {
+						which = timer_day
+						value = 24
+					}
+				}
+			}
+			country_event = {
+				id = timer_events.11
+				days = 22
+			}
+		}
+		else_if = { #24
+			limit = {
+				NOT = {
+					check_variable = {
+						which = timer_day
+						value = 25
+					}
+				}
+			}
+			country_event = {
+				id = timer_events.11
+				days = 23
+			}
+		}
+		else_if = { #25
+			limit = {
+				NOT = {
+					check_variable = {
+						which = timer_day
+						value = 26
+					}
+				}
+			}
+			country_event = {
+				id = timer_events.11
+				days = 24
+			}
+		}
+		else_if = { #26
+			limit = {
+				NOT = {
+					check_variable = {
+						which = timer_day
+						value = 27
+					}
+				}
+			}
+			country_event = {
+				id = timer_events.11
+				days = 25
+			}
+		}
+		else_if = { #27
+			limit = {
+				NOT = {
+					check_variable = {
+						which = timer_day
+						value = 28
+					}
+				}
+			}
+			country_event = {
+				id = timer_events.11
+				days = 26
+			}
+		}
+		else_if = { #28
+			limit = {
+				NOT = {
+					check_variable = {
+						which = timer_day
+						value = 29
+					}
+				}
+			}
+			country_event = {
+				id = timer_events.11
+				days = 27
+			}
+		}
+		else_if = { #29
+			limit = {
+				NOT = {
+					check_variable = {
+						which = timer_day
+						value = 30
+					}
+				}
+			}
+			country_event = {
+				id = timer_events.11
+				days = 28
+			}
+		}
+		else_if = { #30
+			limit = {
+				NOT = {
+					check_variable = {
+						which = timer_day
+						value = 31
+					}
+				}
+			}
+			country_event = {
+				id = timer_events.11
+				days = 29
+			}
+		}
+		else = { #31
+			country_event = {
+				id = timer_events.11
+				days = 30
+			}
+		}
+	}
+	
+	option = {
+		#none
+	}
+	
+	after = {
+		#none
+	}
+}
+
+country_event = { #reminder
+	id = timer_events.11
+	title = timer_events.11.t
+	desc = timer_events.11.d
+	picture = COLONIZATION_eventPicture
+	is_triggered_only = yes
+	
+	immediate = {
+		#none
+	}
+	
+	option = {
+		name = "timer_events.11.a"
+	}
+	
+	after = {
+		REB = {
+			clr_country_flag = timer_active
+		}
+		clr_country_flag = timer_active
+	}
+}

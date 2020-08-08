@@ -1,0 +1,131 @@
+defined_text = {
+	name = decisions_desc
+	random = no
+	text = {
+        trigger = {
+			has_country_flag = timer_active
+        }
+        localisation_key = descYes
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = descNon
+	}
+}
+
+defined_text = {
+	name = decisions_allow
+	random = no
+	text = {
+        trigger = {
+			has_country_flag = timer_active
+        }
+        localisation_key = allowYes
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = allowNon
+	}
+}
+
+defined_text = {
+	name = decisions_effect
+	random = no
+	text = {
+        trigger = {
+			has_country_flag = timer_active
+        }
+        localisation_key = effectYes
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = effectNon
+	}
+}
+
+defined_text = {
+	name = day30x
+	random = no
+	text = {
+        trigger = {
+			check_variable = {
+				which = timer_month
+				value = 2
+			}
+			NOT = {
+				check_variable = {
+					which = timer_month
+					value = 3
+				}
+			}
+        }
+        localisation_key = timer_events.8.day28
+	}
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					check_variable = {
+						which = timer_month
+						value = 4
+					}
+					NOT = {
+						check_variable = {
+							which = timer_month
+							value = 5
+						}
+					}
+				}
+				AND = {
+					check_variable = {
+						which = timer_month
+						value = 6
+					}
+					NOT = {
+						check_variable = {
+							which = timer_month
+							value = 7
+						}
+					}
+				}
+				AND = {
+					check_variable = {
+						which = timer_month
+						value = 9
+					}
+					NOT = {
+						check_variable = {
+							which = timer_month
+							value = 10
+						}
+					}
+				}
+				AND = {
+					check_variable = {
+						which = timer_month
+						value = 11
+					}
+					NOT = {
+						check_variable = {
+							which = timer_month
+							value = 12
+						}
+					}
+				}
+			}
+		}
+		localisation_key = timer_events.8.day30
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = timer_events.8.day31
+	}
+}
